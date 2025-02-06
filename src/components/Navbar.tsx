@@ -16,7 +16,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/" },
     ...(import.meta.env.MODE !== "production" ? [
-      { name: "Programação", href: "#calendario" },
+      { name: "Programação", href: "/calendar" },
     ] : []),
     { name: "Código de Conduta", href: "/code-of-conduct" },
   ];
