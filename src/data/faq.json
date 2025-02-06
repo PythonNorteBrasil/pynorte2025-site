@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "O que é a Python Norte 2025?",
+      "answer": "Python Norte 2025 é o maior evento sobre a linguagem de programação Python da região Norte. É suportado por diversos eventos locais e regionais, culminando em um encontro amigável e itinerante dentro da região Norte."
+    },
+    {
+      "id": 2,
+      "question": "A Python Norte 2025 é paga?",
+      "answer": "Mais informações em breve."
+    },
+    {
+      "id": 3,
+      "question": "Ganho certificado por participar da Python Norte 2025?",
+      "answer": "Sim! Ao participar da Python Norte você receberá no seu email um certificado de participação do evento."
+    },
+    {
+      "id": 4,
+      "question": "Onde e quando será realizado o Python Norte 2025?",
+      "answer": "Mais informações em breve."
+    },
+    {
+      "id": 5,
+      "question": "O evento será presencial ou on-line?",
+      "answer": "A Python Norte 2025 será realizado na modalidade presencial"
+    },
+    {
+      "id": 6,
+      "question": "Qual a programação do evento?",
+      "answer": "A programação do evento estará disponível nas redes sociais assim que possível. E na nossa programação do site"
+    },
+    {
+      "id": 11,
+      "question": "Preciso estar vacinado para participar do evento?",
+      "answer": "De acordo com a OMS, a pandemia foi declarada finalizada no dia 05 de Maio de 2023. No entanto, reforçamos a importância de manter o cartão de vacinação atualizado pelo fato do evento ser presencial."
+    },
+    {
+      "id": 14,
+      "question": "Como posso me inscrever?",
+      "answer": "As inscrições estão abertas agora! Visite o nosso site e inscreva-se para garantir sua participação."
+    }
+  ]
+}

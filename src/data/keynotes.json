@@ -1,0 +1,44 @@
+{
+  "keynotes": [
+    {
+      "id": 1,
+      "name": "Dr. Ana Silva",
+      "avatar": "https://avatar.iran.liara.run/public/1",
+      "title": "Python na Amazônia: Tecnologia e Sustentabilidade",
+      "description": "Uma análise profunda sobre como Python está sendo usado para monitoramento ambiental e preservação da Amazônia.",
+      "time": "4 de Julho - 10:00"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Santos",
+      "avatar": "https://avatar.iran.liara.run/public/2",
+      "title": "Machine Learning com Sabor Paraense",
+      "description": "Aplicações práticas de machine learning usando dados regionais para resolver problemas locais.",
+      "time": "5 de Julho - 14:00"
+    },
+    {
+      "id": 3,
+      "name": "Maria Costa",
+      "avatar": "https://avatar.iran.liara.run/public/3",
+      "title": "Django: Construindo o Futuro do Norte",
+      "description": "Como o framework Django está impulsionando startups e empresas da região Norte.",
+      "time": "6 de Julho - 11:00"
+    },
+    {
+      "id": 4,
+      "name": "Pedro Oliveira",
+      "avatar": "https://avatar.iran.liara.run/public/4",
+      "title": "Data Science e Biodiversidade",
+      "description": "Utilizando Python para análise de dados da biodiversidade amazônica.",
+      "time": "5 de Julho - 16:00"
+    },
+    {
+      "id": 5,
+      "name": "Julia Lima",
+      "avatar": "https://avatar.iran.liara.run/public/5",
+      "title": "FastAPI na Prática",
+      "description": "Construindo APIs modernas e eficientes com FastAPI para aplicações escaláveis.",
+      "time": "4 de Julho - 14:00"
+    }
+  ]
+}

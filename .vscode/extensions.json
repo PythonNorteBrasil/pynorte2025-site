@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "aaron-bond.better-comments",
+        "anseki.vscode-color",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss"
+    ]
+}

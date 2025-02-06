@@ -1,14 +1,15 @@
+import React from 'react';
 import { Outlet } from 'react-router-dom'
 
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export function DefaultLayout() {
   return (
-    <div className="min-h-screen bg-zinc-900 bg-cover object-top text-white sm:bg-zinc-900">
-      <Header />
+    <div className="min-h-screen bg-theme-cream">
+      <Navbar />
 
-      <main className="relative px-8 py-6 md:px-28 lg:px-40">
+      <main>
         <Outlet />
       </main>
 

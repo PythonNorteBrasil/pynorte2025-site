@@ -1,0 +1,152 @@
+{
+  "2025-07-04": [
+    {
+      "time": "09:00",
+      "title": "Abertura do Evento",
+      "speaker": "Comitê Organizador",
+      "room": "Auditório Principal"
+    },
+    {
+      "time": "10:00",
+      "title": "Python na Amazônia: Casos de Uso",
+      "speaker": "Dra. Ana Silva",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "11:00",
+      "title": "Workshop: Django para Iniciantes",
+      "speaker": "Carlos Santos",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "13:30",
+      "title": "Machine Learning na Prática",
+      "speaker": "Maria Costa",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "14:30",
+      "title": "Data Science e Sustentabilidade",
+      "speaker": "João Lima",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "15:30",
+      "title": "APIs REST com FastAPI",
+      "speaker": "Pedro Oliveira",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "16:30",
+      "title": "Python e IoT na Amazônia",
+      "speaker": "Julia Lima",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "17:30",
+      "title": "Lightning Talks",
+      "speaker": "Comunidade",
+      "room": "Auditório Principal"
+    }
+  ],
+  "2025-07-05": [
+    {
+      "time": "09:00",
+      "title": "Keynote: Futuro do Python",
+      "speaker": "Dr. Roberto Martins",
+      "room": "Auditório Principal"
+    },
+    {
+      "time": "10:00",
+      "title": "Web Scraping Ético",
+      "speaker": "Carla Souza",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "11:00",
+      "title": "Workshop: FastAPI Avançado",
+      "speaker": "Lucas Mendes",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "13:30",
+      "title": "Python no Backend",
+      "speaker": "Amanda Silva",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "14:30",
+      "title": "Testes Automatizados",
+      "speaker": "Rafael Costa",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "15:30",
+      "title": "Deploy com Docker",
+      "speaker": "Marcos Paulo",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "16:30",
+      "title": "Python e Dados Abertos",
+      "speaker": "Fernanda Lima",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "17:30",
+      "title": "Lightning Talks",
+      "speaker": "Comunidade",
+      "room": "Auditório Principal"
+    }
+  ],
+  "2025-07-06": [
+    {
+      "time": "09:00",
+      "title": "Keynote: Python na Educação",
+      "speaker": "Profa. Beatriz Santos",
+      "room": "Auditório Principal"
+    },
+    {
+      "time": "10:00",
+      "title": "Desenvolvimento Sustentável",
+      "speaker": "Ricardo Oliveira",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "11:00",
+      "title": "Workshop: Data Analysis",
+      "speaker": "Patricia Costa",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "13:30",
+      "title": "Python e Bioinformática",
+      "speaker": "Dr. Thiago Silva",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "14:30",
+      "title": "Segurança em Python",
+      "speaker": "Bruno Lima",
+      "room": "Sala Açaí"
+    },
+    {
+      "time": "15:30",
+      "title": "APIs Assíncronas",
+      "speaker": "Camila Souza",
+      "room": "Laboratório Jambu"
+    },
+    {
+      "time": "16:30",
+      "title": "Python na Nuvem",
+      "speaker": "Leonardo Santos",
+      "room": "Sala Tacacá"
+    },
+    {
+      "time": "17:30",
+      "title": "Encerramento",
+      "speaker": "Comitê Organizador",
+      "room": "Auditório Principal"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "Collection 1": {
+    "name": "Collection 1",
+    "Açai": {
+      "Açaí_02": {
+        "name": "Açai/Açaí_02",
+        "description": "",
+        "value": "#3b276b",
+        "type": "color"
+      }
+    },
+    "Víbora": {
+      "Vibora_01": {
+        "name": "Víbora/Vibora_01",
+        "description": "",
+        "value": "#0ba2c6",
+        "type": "color"
+      },
+      "Vibora_02": {
+        "name": "Víbora/Vibora_02",
+        "description": "",
+        "value": "#057ca4",
+        "type": "color"
+      },
+      "Açai_01": {
+        "name": "Víbora/Açai_01",
+        "description": "",
+        "value": "#b59dcb",
+        "type": "color"
+      },
+      "Vibora_03": {
+        "name": "Víbora/Vibora_03",
+        "description": "",
+        "value": "#2764ae",
+        "type": "color"
+      },
+      "Vibora_04": {
+        "name": "Víbora/Vibora_04",
+        "description": "",
+        "value": "#0a4d9d",
+        "type": "color"
+      },
+      "Vibora_05": {
+        "name": "Víbora/Vibora_05",
+        "description": "",
+        "value": "#0e5373",
+        "type": "color"
+      },
+      "Vibora_06": {
+        "name": "Víbora/Vibora_06",
+        "description": "",
+        "value": "#20376a",
+        "type": "color"
+      }
+    },
+    "Jambu": {
+      "Jambu_01": {
+        "name": "Jambu/Jambu_01",
+        "description": "",
+        "value": "#82a529",
+        "type": "color"
+      },
+      "Jambu_02": {
+        "name": "Jambu/Jambu_02",
+        "description": "",
+        "value": "#50822f",
+        "type": "color"
+      },
+      "Jambu_03": {
+        "name": "Jambu/Jambu_03",
+        "description": "",
+        "value": "#41501f",
+        "type": "color"
+      }
+    },
+    "Jiboia": {
+      "Jiboia_01": {
+        "name": "Jiboia/Jiboia_01",
+        "description": "",
+        "value": "#e25a52",
+        "type": "color"
+      },
+      "Jiboia_02": {
+        "name": "Jiboia/Jiboia_02",
+        "description": "",
+        "value": "#de3e2e",
+        "type": "color"
+      },
+      "Jiboia_03": {
+        "name": "Jiboia/Jiboia_03",
+        "description": "",
+        "value": "#c82519",
+        "type": "color"
+      },
+      "Jiboia_04": {
+        "name": "Jiboia/Jiboia_04",
+        "description": "",
+        "value": "#ad282d",
+        "type": "color"
+      },
+      "Jiboia_05": {
+        "name": "Jiboia/Jiboia_05",
+        "description": "",
+        "value": "#9c191a",
+        "type": "color"
+      },
+      "Jiboia_06": {
+        "name": "Jiboia/Jiboia_06",
+        "description": "",
+        "value": "#7d1d1d",
+        "type": "color"
+      }
+    },
+    "Camarão": {
+      "Camarão_01": {
+        "name": "Camarão/Camarão_01",
+        "description": "",
+        "value": "#f28e89",
+        "type": "color"
+      },
+      "Camarão_02": {
+        "name": "Camarão/Camarão_02",
+        "description": "",
+        "value": "#ed6954",
+        "type": "color"
+      }
+    },
+    "Tacacá": {
+      "Tacacá_01": {
+        "name": "Tacacá/Tacacá_01",
+        "description": "",
+        "value": "#f8f4b7",
+        "type": "color"
+      },
+      "Tacacá_02": {
+        "name": "Tacacá/Tacacá_02",
+        "description": "",
+        "value": "#e8e0a8",
+        "type": "color"
+      },
+      "Tacacá_03": {
+        "name": "Tacacá/Tacacá_03",
+        "description": "",
+        "value": "#f0d19a",
+        "type": "color"
+      },
+      "Tacacá_04": {
+        "name": "Tacacá/Tacacá_04",
+        "description": "",
+        "value": "#ecbd5f",
+        "type": "color"
+      },
+      "Tacacá_05": {
+        "name": "Tacacá/Tacacá_05",
+        "description": "",
+        "value": "#f6a118",
+        "type": "color"
+      },
+      "Tacacá_06": {
+        "name": "Tacacá/Tacacá_06",
+        "description": "",
+        "value": "#e89126",
+        "type": "color"
+      },
+      "Tacacá_07": {
+        "name": "Tacacá/Tacacá_07",
+        "description": "",
+        "value": "#d17824",
+        "type": "color"
+      },
+      "Tacacá_08": {
+        "name": "Tacacá/Tacacá_08",
+        "description": "",
+        "value": "#b05117",
+        "type": "color"
+      },
+      "Tacacá_09": {
+        "name": "Tacacá/Tacacá_09",
+        "description": "",
+        "value": "#ffffcc",
+        "type": "color"
+      }
+    },
+    "Cabocla": {
+      "Cabocla_01": {
+        "name": "Cabocla/Cabocla_01",
+        "description": "",
+        "value": "#d75941",
+        "type": "color"
+      },
+      "Cabocla_02": {
+        "name": "Cabocla/Cabocla_02",
+        "description": "",
+        "value": "#c5453d",
+        "type": "color"
+      },
+      "Cabocla_03": {
+        "name": "Cabocla/Cabocla_03",
+        "description": "",
+        "value": "#9f2d3e",
+        "type": "color"
+      },
+      "Cabocla_04": {
+        "name": "Cabocla/Cabocla_04",
+        "description": "",
+        "value": "#4d252a",
+        "type": "color"
+      },
+      "Cabocla_05": {
+        "name": "Cabocla/Cabocla_05",
+        "description": "",
+        "value": "#25120b",
+        "type": "color"
+      },
+      "Cabocla_06": {
+        "name": "Jiboia/Cabocla_06",
+        "description": "",
+        "value": "#351a1d",
+        "type": "color"
+      }
+    }
+  },
+  "Collection 2": {
+    "name": "Collection 2"
+  }
+}
