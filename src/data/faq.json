@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "O que é a Python Norte 2025?",
+      "answer": "A Python Norte 2025 é a maior conferência de Python da região Norte do Brasil. O evento reúne desenvolvedores, empresas e entusiastas para compartilhar conhecimento, experiências e fortalecer a comunidade Python na região."
+    },
+    {
+      "id": 2,
+      "question": "A Python Norte 2025 é paga?",
+      "answer": "Sim, o evento possui diferentes categorias de ingressos com valores acessíveis. Estudantes têm desconto especial e também oferecemos um programa de diversidade com ingressos gratuitos para grupos sub-representados."
+    },
+    {
+      "id": 3,
+      "question": "Ganho certificado por participar da Python Norte 2025?",
+      "answer": "Sim! Todos os participantes receberão certificado digital de participação. Palestrantes receberão certificado específico de apresentação."
+    },
+    {
+      "id": 4,
+      "question": "Onde e quando será realizado o Python Norte 2025?",
+      "answer": "O evento acontecerá em Belém/PA, de 4 a 6 de Julho de 2025. O local exato será divulgado em breve nos nossos canais oficiais."
+    }
+  ]
+}

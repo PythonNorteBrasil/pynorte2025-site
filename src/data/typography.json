@@ -1,0 +1,44 @@
+{
+  "fontScale": [
+    {
+      "scale": "H1",
+      "font": "DM Mono",
+      "weight": "Light",
+      "size": "48 pt",
+      "lineHeight": "18 pt",
+      "application": "Títulos"
+    },
+    {
+      "scale": "H2",
+      "font": "DM Mono",
+      "weight": "Medium",
+      "size": "48 pt",
+      "lineHeight": "18 pt",
+      "application": "Destaque de títulos"
+    },
+    {
+      "scale": "H3",
+      "font": "DM Mono",
+      "weight": "Light",
+      "size": "30 pt",
+      "lineHeight": "0 pt",
+      "application": "Subtítulos"
+    },
+    {
+      "scale": "H4",
+      "font": "DM Mono",
+      "weight": "Medium",
+      "size": "30 pt",
+      "lineHeight": "0 pt",
+      "application": "Destaque de subtítulos"
+    },
+    {
+      "scale": "H5",
+      "font": "DM Mono",
+      "weight": "Regular",
+      "size": "21 pt",
+      "lineHeight": "0 pt",
+      "application": "Lide"
+    }
+  ]
+}

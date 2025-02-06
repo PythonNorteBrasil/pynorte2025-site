@@ -1,53 +1,44 @@
-import { GrTwitter, GrInstagram, GrFacebook, GrLinkedin } from 'react-icons/gr'
+const Footer = () => {
+  const quickLinks = [
+    { name: "Adquira seu ingresso", href: "#" },
+    { name: "Seja um Patrocinador", href: "#" },
+    { name: "Local do Evento", href: "#" },
+  ];
 
-export function Footer() {
   return (
-    <footer className="flex flex-col items-start justify-between bg-zinc-900 px-8 py-12 md:flex-row md:px-28 lg:px-40">
-      <div className="space-y-8 md:mr-16">
-        <p className="max-w-md text-sm text-zinc-600 md:text-base">
-          Python Norte é uma conferência sem fins lucrativos dirigida por
-          voluntários para promover a linguagem de programação Python de código
-          aberto. É apoiado pela Associação Python Brasil (APyB).
-        </p>
+    <footer className="bg-[rgb(68,72,23)] text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Python Norte</h3>
+            <p className="max-w-md">
+              Python Norte é uma conferência sem fins lucrativos dirigida por
+              voluntários para promover a linguagem de programação Python de código
+              aberto. É apoiado pela Associação Python Brasil (APyB).
+            </p>
+          </div>
 
-        <section className="flex items-center gap-4">
-          <a
-            className="text-2xl"
-            href="https://twitter.com/pythonnortebr"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GrTwitter />
-          </a>
-
-          <a
-            className="text-2xl"
-            href="https://www.instagram.com/pythonnortebrasil/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GrInstagram />
-          </a>
-
-          <a
-            className="text-2xl"
-            href="https://www.facebook.com/profile.php?id=61568143374581"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GrFacebook fill="#fff" />
-          </a>
-
-          <a
-            className="text-2xl"
-            href="https://www.linkedin.com/company/pynorte/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GrLinkedin />
-          </a>
-        </section>
+          {import.meta.env.MODE !== "production" && (
+            <div>
+              <h3 className="text-xl font-bold mb-4">Links Rápidos</h3>
+              <ul className="space-y-2">
+                {quickLinks.map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.href}
+                      className="hover:text-[rgb(127,104,97)] transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;
