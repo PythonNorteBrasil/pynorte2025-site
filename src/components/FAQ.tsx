@@ -10,7 +10,7 @@ const FAQ = () => {
   return (
     <section className="py-20 bg-theme-background">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-4xl font-bold text-[rgb(68,72,23)] text-center mb-12">
+        <h2 className="text-4xl font-bold text-jambu text-center mb-12">
           Perguntas Frequentes
         </h2>
         <Accordion type="single" collapsible className="space-y-4">
@@ -20,10 +20,10 @@ const FAQ = () => {
               value={`item-${faq.id}`}
               className="bg-white rounded-lg shadow-md"
             >
-              <AccordionTrigger className="px-6 text-[rgb(68,72,23)] hover:text-[rgb(127,104,97)]">
+              <AccordionTrigger className="px-6 text-jambu hover:text-jiboia">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="px-6 text-[rgb(127,104,97)]">
+              <AccordionContent className="px-6 text-jiboia">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

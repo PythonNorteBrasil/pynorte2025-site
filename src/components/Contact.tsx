@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-[rgb(68,72,23)] mb-12">
+        <h2 className="text-4xl font-bold text-jambu mb-12">
           Nossos contatos
         </h2>
         <div className="flex justify-center space-x-8">
@@ -43,7 +43,7 @@ const Contact = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)] transition-colors"
+              className="text-jiboia hover:text-jambu transition-colors"
               aria-label={link.label}
             >
               <link.icon size={32} />

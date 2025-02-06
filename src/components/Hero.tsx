@@ -10,12 +10,12 @@ const Hero = () => {
           alt="Python Norte 2025"
           className="mx-auto mb-6 h-32"
         />
-        <p className="font-mono text-xl md:text-2xl text-[rgb(127,104,97)] mb-8 max-w-2xl mx-auto">
+        <p className="font-mono text-xl md:text-2xl text-primary mb-8 max-w-2xl mx-auto">
           O maior evento de Python da região Norte do Brasil.
           Junte-se a nós em Belém do Pará para três dias de
           aprendizado, networking e cultura amazônica.
         </p>
-        <p className="text-[rgb(127,104,97)] text-lg mb-8">
+        <p className="text-primary text-lg mb-8">
           4 a 6 de Julho de 2025 • Belém, Pará
         </p>
         {import.meta.env.MODE !== "production" && (

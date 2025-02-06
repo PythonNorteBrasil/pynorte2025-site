@@ -104,12 +104,6 @@
         "value": "#9c191a",
         "type": "color"
       },
-      "Cabocla_06": {
-        "name": "Jiboia/Cabocla_06",
-        "description": "",
-        "value": "#351a1d",
-        "type": "color"
-      },
       "Jiboia_06": {
         "name": "Jiboia/Jiboia_06",
         "description": "",
@@ -216,6 +210,12 @@
         "name": "Cabocla/Cabocla_05",
         "description": "",
         "value": "#25120b",
+        "type": "color"
+      },
+      "Cabocla_06": {
+        "name": "Jiboia/Cabocla_06",
+        "description": "",
+        "value": "#351a1d",
         "type": "color"
       }
     }

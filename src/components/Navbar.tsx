@@ -39,7 +39,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)] transition-colors"
+                className="text-jiboia hover:text-jambu transition-colors"
               >
                 {item.name}
               </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)]"
+                    className="text-jiboia hover:text-jambu"
                   >
                     <Languages className="h-5 w-5" />
                   </Button>
@@ -81,7 +81,7 @@ const Navbar = () => {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)]"
+                    className="text-jiboia hover:text-jambu"
                   >
                     <Languages className="h-5 w-5" />
                   </Button>
@@ -97,7 +97,7 @@ const Navbar = () => {
               </DropdownMenu>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)] transition-colors"
+                className="text-jiboia hover:text-jambu transition-colors"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)] transition-colors"
+                  className="block px-3 py-2 text-jiboia hover:text-jambu transition-colors"
                 >
                   {item.name}
                 </a>

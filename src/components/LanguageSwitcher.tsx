@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
       variant="ghost"
       size="icon"
       onClick={toggleLanguage}
-      className="text-[rgb(127,104,97)] hover:text-[rgb(68,72,23)]"
+      className="text-jiboia hover:text-jambu"
       data-testid="language-switcher"
     >
       <Languages className="h-5 w-5" />

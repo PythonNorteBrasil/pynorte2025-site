@@ -202,8 +202,8 @@ const Calendar = () => {
                   <h3 className="text-xl font-medium text-theme-primary mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-[rgb(127,104,97)] mb-2">{event.speaker}</p>
-                  <div className="flex flex-wrap gap-4 text-sm text-[rgb(127,104,97)]">
+                  <p className="text-jiboia mb-2">{event.speaker}</p>
+                  <div className="flex flex-wrap gap-4 text-sm text-jiboia">
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       {event.time}

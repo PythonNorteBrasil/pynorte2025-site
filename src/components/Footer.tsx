@@ -6,7 +6,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[rgb(68,72,23)] text-white py-12">
+    <footer className="bg-jambu text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -26,7 +26,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="hover:text-[rgb(127,104,97)] transition-colors"
+                      className="hover:text-jiboia transition-colors"
                     >
                       {link.name}
                     </a>
