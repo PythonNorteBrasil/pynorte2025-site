@@ -9,11 +9,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useLanguage } from "@/hooks/useLanguage";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
+  const toggleLanguage = () => {
+    console.log("toggleLanguage");
+  }
+
 
   const navItems = [
     { name: "Home", href: "/" },
