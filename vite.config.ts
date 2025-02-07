@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     historyApiFallback: true,
   },
-  base: 'https://jacksonosvaldo.github.io/pynorte2025-site',
+  base: 'https://jacksonosvaldo.github.io/pynorte2025-site/',
   plugins: [
     react(),
   ],
