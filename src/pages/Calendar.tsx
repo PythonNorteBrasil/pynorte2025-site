@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import calendar from "../data/calendar.json";
+import { useTranslation } from "react-i18next";
 
 const Calendar = () => {
   const [selectedDay, setSelectedDay] = useState("2025-07-04");
+  const { t } = useTranslation();
 
   const days = [
     { date: "2025-07-04", label: "Quinta-feira, 4 de julho" },
@@ -15,7 +17,7 @@ const Calendar = () => {
   return (
     <div className="container mx-auto px-4 py-20">
       <h1 className="text-4xl font-mono font-light text-theme-primary text-center mb-12">
-        Calendário do Evento
+        {t("calendar.title")}
       </h1>
 
       <div className="flex gap-4 mb-8 overflow-x-auto pb-4">
