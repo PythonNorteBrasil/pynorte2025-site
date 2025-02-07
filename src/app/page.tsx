@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <>
       <Hero />
-      {import.meta.env.MODE !== "production" && (
+      {process.env.NODE_ENV === "development" && (
         <>
           <Location />
           <Schedule />

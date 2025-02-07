@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {import.meta.env.MODE !== "production" && (
+          {process.env.NODE_ENV === "development" && (
             <div>
               <h3 className="text-xl font-bold mb-4">Links Rápidos</h3>
               <ul className="space-y-2">

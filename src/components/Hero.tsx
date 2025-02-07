@@ -18,7 +18,7 @@ const Hero = () => {
         <p className="text-primary text-lg mb-8">
           4 a 6 de Julho de 2025 • Belém, Pará
         </p>
-        {import.meta.env.MODE !== "production" && (
+        {process.env.NODE_ENV === "development" && (
           <Button className="bg-theme-warning hover:bg-theme-warning/90 text-white text-lg px-8 py-6">
             Adquira seu ingresso
           </Button>

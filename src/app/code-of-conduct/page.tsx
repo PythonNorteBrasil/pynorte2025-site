@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 

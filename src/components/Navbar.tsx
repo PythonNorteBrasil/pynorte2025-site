@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import { Menu, X, Languages } from "lucide-react";
 import { Button } from "./ui/button";
@@ -15,7 +17,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    ...(import.meta.env.MODE !== "production" ? [
+    ...(process.env.NODE_ENV === "development" ? [
       { name: "Programação", href: "/calendar" },
     ] : []),
     { name: "Código de Conduta", href: "/code-of-conduct" },
@@ -44,13 +46,13 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            {import.meta.env.MODE !== "production" && (
+            {process.env.NODE_ENV === "development" && (
               <Button className="bg-theme-warning hover:bg-theme-warning/90 text-white">
                 Inscreva-se
               </Button>
             )}
 
-            {import.meta.env.MODE !== "production" && (
+            {process.env.NODE_ENV === "development" && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
@@ -74,7 +76,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          {import.meta.env.MODE !== "production" && (
+          {process.env.NODE_ENV === "development" && (
             <div className="md:hidden flex items-center space-x-4">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -119,7 +121,7 @@ const Navbar = () => {
                 </a>
               ))}
 
-              {import.meta.env.MODE !== "production" && (
+              {process.env.NODE_ENV === "development" && (
                 <Button className="w-full bg-theme-warning hover:bg-theme-warning/90 text-white mt-4">
                   Inscreva-se
                 </Button>

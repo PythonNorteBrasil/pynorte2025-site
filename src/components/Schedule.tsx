@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Carousel,
   CarouselContent,
@@ -7,8 +9,8 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
-import { Link } from "react-router-dom";
 import keynotes from "../data/keynotes.json";
+import Link from "next/link";
 
 const Schedule = () => {
   return (
@@ -18,7 +20,7 @@ const Schedule = () => {
           <h2 className="text-4xl font-mono font-light text-theme-primary">
             Keynotes
           </h2>
-          <Link to="/calendar">
+          <Link href="/calendar">
             <Button variant="outline" className="gap-2">
               <Calendar className="h-4 w-4" />
               Ver Calendário Completo

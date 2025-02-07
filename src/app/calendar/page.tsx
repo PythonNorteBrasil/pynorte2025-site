@@ -1,12 +1,14 @@
+"use client"
+
 import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
-import calendar from "../data/calendar.json";
+import calendar from "../../data/calendar.json";
 
 const Calendar = () => {
-  const [selectedDay, setSelectedDay] = useState("2025-07-04");
+  const [selectedDay, setSelectedDay] = useState<"2025-07-04" | "2025-07-05" | "2025-07-06">("2025-07-04");
 
-  const days = [
+  const days: { date: "2025-07-04" | "2025-07-05" | "2025-07-06", label: string }[] = [
     { date: "2025-07-04", label: "Quinta-feira, 4 de julho" },
     { date: "2025-07-05", label: "Sexta-feira, 5 de julho" },
     { date: "2025-07-06", label: "Sábado, 6 de julho" },
@@ -36,7 +38,7 @@ const Calendar = () => {
       </div>
 
       <div className="space-y-4">
-        {calendar[selectedDay].map((event, index) => (
+        {calendar[selectedDay].map((event: { title: string, speaker: string, time: string, room: string }, index: number) => (
           <div
             key={index}
             className="bg-theme-background rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"

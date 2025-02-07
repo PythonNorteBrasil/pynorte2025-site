@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://2025.pythonnorte.org
+
+# Sitemaps
+Sitemap: https://2025.pythonnorte.org/sitemap.xml
