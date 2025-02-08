@@ -10,20 +10,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { useChangeLocale, useScopedI18n } from '@/locales/client'
+import { useChangeLocale, useScopedI18n, useCurrentLocale } from '@/locales/client'
 
 const Navbar = () => {
   const t = useScopedI18n("component.menu");
+  const locale = useCurrentLocale()
 
   const [isOpen, setIsOpen] = useState(false);
   const changeLocale = useChangeLocale()
 
   const navItems = [
-    { name: t("home"), href: "/" },
+    { name: t("home"), href: `/${locale}/` },
     ...(process.env.NODE_ENV === "development" ? [
-      { name: t("calendar"), href: "/calendar" },
+      { name: t("calendar"), href: `/${locale}/calendar` },
     ] : []),
-    { name: t("codeOfConduct"), href: "/code-of-conduct" },
+    { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
   ];
 
   return (

@@ -4,20 +4,23 @@ import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import calendar from "@/data/calendar.json";
+import { useScopedI18n } from "@/locales/client";
 
 const Calendar = () => {
+  const t = useScopedI18n("page.calendar");
+
   const [selectedDay, setSelectedDay] = useState<"2025-07-04" | "2025-07-05" | "2025-07-06">("2025-07-04");
 
   const days: { date: "2025-07-04" | "2025-07-05" | "2025-07-06", label: string }[] = [
-    { date: "2025-07-04", label: "Quinta-feira, 4 de julho" },
-    { date: "2025-07-05", label: "Sexta-feira, 5 de julho" },
-    { date: "2025-07-06", label: "Sábado, 6 de julho" },
+    { date: "2025-07-04", label: t("thursday") },
+    { date: "2025-07-05", label: t("friday") },
+    { date: "2025-07-06", label: t("saturday") },
   ];
 
   return (
     <div className="container mx-auto px-4 py-20">
       <h1 className="text-4xl font-mono font-light text-theme-primary text-center mb-12">
-        Calendário do Evento
+        {t("title")}
       </h1>
 
       <div className="flex gap-4 mb-8 overflow-x-auto pb-4">

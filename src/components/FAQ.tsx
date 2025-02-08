@@ -1,6 +1,6 @@
 "use client"
 
-import { useScopedI18n } from "@/locales/client";
+import { useScopedI18n, useCurrentLocale } from "@/locales/client";
 
 import {
   Accordion,
@@ -9,10 +9,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import faqs from "@/data/faq.json";
+import faqsEn from "@/data/faq.en.json";
+import faqsPt from "@/data/faq.pt.json";
 
 const FAQ = () => {
   const t = useScopedI18n("component.faq");
+  const locale = useCurrentLocale();
+
+  const faqs = locale === "pt" ? faqsPt : faqsEn;
 
   return (
     <section className="py-20 bg-theme-background">

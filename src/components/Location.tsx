@@ -18,7 +18,7 @@ const Location = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div>
-              <h2 className="text-4xl font-bold text-theme-green mb-6">Local do Evento</h2>
+              <h2 className="text-4xl font-bold text-theme-green mb-6">{t("title")}</h2>
               <p className="text-theme-brown text-lg mb-6">
                 {t("description")}
               </p>
