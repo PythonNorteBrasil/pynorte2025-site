@@ -10,19 +10,20 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleLanguage = () => {
-    console.log("toggleLanguage");
-  }
+import { useChangeLocale, useScopedI18n } from '@/locales/client'
 
+const Navbar = () => {
+  const t = useScopedI18n("component.menu");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const changeLocale = useChangeLocale()
 
   const navItems = [
-    { name: "Home", href: "/" },
+    { name: t("home"), href: "/" },
     ...(process.env.NODE_ENV === "development" ? [
-      { name: "Programação", href: "/calendar" },
+      { name: t("calendar"), href: "/calendar" },
     ] : []),
-    { name: "Código de Conduta", href: "/code-of-conduct" },
+    { name: t("codeOfConduct"), href: "/code-of-conduct" },
   ];
 
   return (
@@ -66,10 +67,10 @@ const Navbar = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("pt")}>
                     <span className="mr-2">🇧🇷</span> Português
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("en")}>
                     <span className="mr-2">🇺🇸</span> English
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -91,10 +92,10 @@ const Navbar = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("pt")}>
                     <span className="mr-2">🇧🇷</span> Português
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("en")}>
                     <span className="mr-2">🇺🇸</span> English
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -125,7 +126,7 @@ const Navbar = () => {
 
               {process.env.NODE_ENV === "development" && (
                 <Button className="w-full bg-theme-warning hover:bg-theme-warning/90 text-white mt-4">
-                  Inscreva-se
+                  {t("register")}
                 </Button>
               )}
             </div>

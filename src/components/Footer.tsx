@@ -1,8 +1,14 @@
+"use client"
+
+import { useScopedI18n } from '@/locales/client'
+
 const Footer = () => {
+  const t = useScopedI18n("component.footer");
+
   const quickLinks = [
-    { name: "Adquira seu ingresso", href: "#" },
-    { name: "Seja um Patrocinador", href: "#" },
-    { name: "Local do Evento", href: "#" },
+    { name: t("adquireTicket"), href: "#" },
+    { name: t("beASponsor"), href: "#" },
+    { name: t("eventLocation"), href: "#" },
   ];
 
   return (
@@ -12,15 +18,13 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Python Norte</h3>
             <p className="max-w-md">
-              Python Norte é uma conferência sem fins lucrativos dirigida por
-              voluntários para promover a linguagem de programação Python de código
-              aberto. É apoiado pela Associação Python Brasil (APyB).
+              {t("description")}
             </p>
           </div>
 
           {process.env.NODE_ENV === "development" && (
             <div>
-              <h3 className="text-xl font-bold mb-4">Links Rápidos</h3>
+              <h3 className="text-xl font-bold mb-4">{t("quickLinks")}</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.name}>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
-import calendar from "../../data/calendar.json";
+import calendar from "@/data/calendar.json";
 
 const Calendar = () => {
   const [selectedDay, setSelectedDay] = useState<"2025-07-04" | "2025-07-05" | "2025-07-06">("2025-07-04");

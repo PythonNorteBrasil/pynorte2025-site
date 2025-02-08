@@ -28,19 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt">
       <GoogleTagManager gtmId="G-VRV0920911" />
-      <body>
-        <div className="min-h-screen bg-theme-cream">
-          <Navbar />
-
-          <main>
-            {children}
-          </main>
-
-          <Footer />
-        </div>
-      </body>
+      {children}
     </html>
   );
 }

@@ -1,6 +1,12 @@
-import { Button } from "./ui/button";
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { useScopedI18n } from "@/locales/client";
+
 
 const Hero = () => {
+  const t = useScopedI18n("component.hero");
+
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden">
       <div className="absolute inset-0 bg-[url('/background_hero.png')] bg-cover bg-center opacity-10" />
@@ -11,16 +17,14 @@ const Hero = () => {
           className="mx-auto mb-6 h-32"
         />
         <p className="font-mono text-xl md:text-2xl text-primary mb-8 max-w-2xl mx-auto">
-          O maior evento de Python da região Norte do Brasil.
-          Junte-se a nós em Belém do Pará para três dias de
-          aprendizado, networking e cultura amazônica.
+          {t("description")}
         </p>
         <p className="text-primary text-lg mb-8">
-          4 a 6 de Julho de 2025 • Belém, Pará
+          {t("date")}
         </p>
         {process.env.NODE_ENV === "development" && (
           <Button className="bg-theme-warning hover:bg-theme-warning/90 text-white text-lg px-8 py-6">
-            Adquira seu ingresso
+            {t("register")}
           </Button>
         )}
       </div>
