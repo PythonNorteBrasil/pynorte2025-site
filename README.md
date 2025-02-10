@@ -18,7 +18,6 @@ git clone https://github.com/pythonnorte/pynorte2025-site.git
 # Step 2: Navigate to the project directory.
 cd pynorte2025-site
 
-
 # Step 3: Install the necessary dependencies.
 npm i
 
@@ -30,7 +29,7 @@ npm run dev
 
 This project is built with .
 
-- Vite
+- Next.js with App Router
 - TypeScript
 - React
 - shadcn-ui

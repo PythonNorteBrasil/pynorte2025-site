@@ -1,6 +1,11 @@
-import sponsors from "../data/sponsors.json";
+"use client";
+
+import sponsors from "@/data/sponsors.json";
+import { useScopedI18n } from "@/locales/client";
 
 const Sponsors = () => {
+  const t = useScopedI18n("component.sponsors");
+
   const levels = [
     { key: "diamond", title: "Tacacá (Diamond)" },
     { key: "gold", title: "Camarão (Gold)" },
@@ -13,9 +18,10 @@ const Sponsors = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-theme-green text-center mb-12">
-          Patrocinadores
+          {t("title")}
         </h2>
         <div className="space-y-16">
+
           {levels.map((level) => (
             <div key={level.key} className="text-center">
               <h3 className="text-2xl font-semibold text-theme-brown mb-8">

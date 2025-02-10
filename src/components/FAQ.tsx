@@ -1,17 +1,28 @@
+"use client"
+
+import { useScopedI18n, useCurrentLocale } from "@/locales/client";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import faqs from "../data/faq.json";
+
+import faqsEn from "@/data/faq.en.json";
+import faqsPt from "@/data/faq.pt.json";
 
 const FAQ = () => {
+  const t = useScopedI18n("component.faq");
+  const locale = useCurrentLocale();
+
+  const faqs = locale === "pt" ? faqsPt : faqsEn;
+
   return (
     <section className="py-20 bg-theme-background">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-4xl font-bold text-jambu text-center mb-12">
-          Perguntas Frequentes
+          {t("title")}
         </h2>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.faqs.map((faq) => (

@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Carousel,
   CarouselContent,
@@ -7,21 +9,24 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
-import { Link } from "react-router-dom";
 import keynotes from "../data/keynotes.json";
+import Link from "next/link";
+import { useScopedI18n } from "@/locales/client";
 
 const Schedule = () => {
+  const t = useScopedI18n("component.schedule");
+
   return (
     <section id="calendario" className="py-20 bg-theme-background">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-4xl font-mono font-light text-theme-primary">
-            Keynotes
+            {t("title")}
           </h2>
-          <Link to="/calendar">
+          <Link href="/calendar">
             <Button variant="outline" className="gap-2">
               <Calendar className="h-4 w-4" />
-              Ver Calendário Completo
+              {t("calendar")}
             </Button>
           </Link>
         </div>

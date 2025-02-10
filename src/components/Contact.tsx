@@ -1,9 +1,14 @@
+"use client"
+
 import React from 'react';
 
 import { Mail, X } from "lucide-react";
 import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
+import { useScopedI18n } from '@/locales/client'
 
 const Contact = () => {
+  const t = useScopedI18n("component.contact");
+
   const socialLinks = [
     {
       icon: X,
@@ -36,7 +41,7 @@ const Contact = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-jambu mb-12">
-          Nossos contatos
+          {t("title")}
         </h2>
         <div className="flex justify-center space-x-8">
           {socialLinks.map((link) => (

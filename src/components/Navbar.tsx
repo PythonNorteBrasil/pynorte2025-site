@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import { Menu, X, Languages } from "lucide-react";
 import { Button } from "./ui/button";
@@ -7,18 +9,22 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useLanguage } from "@/hooks/useLanguage";
+
+import { useChangeLocale, useScopedI18n, useCurrentLocale } from '@/locales/client'
 
 const Navbar = () => {
+  const t = useScopedI18n("component.menu");
+  const locale = useCurrentLocale()
+
   const [isOpen, setIsOpen] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
+  const changeLocale = useChangeLocale()
 
   const navItems = [
-    { name: "Home", href: "/" },
-    ...(import.meta.env.MODE !== "production" ? [
-      { name: "Programação", href: "/calendar" },
+    { name: t("home"), href: `/${locale}/` },
+    ...(process.env.NODE_ENV === "development" ? [
+      { name: t("calendar"), href: `/${locale}/calendar` },
     ] : []),
-    { name: "Código de Conduta", href: "/code-of-conduct" },
+    { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
   ];
 
   return (
@@ -44,13 +50,13 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            {import.meta.env.MODE !== "production" && (
+            {process.env.NODE_ENV === "development" && (
               <Button className="bg-theme-warning hover:bg-theme-warning/90 text-white">
                 Inscreva-se
               </Button>
             )}
 
-            {import.meta.env.MODE !== "production" && (
+            {process.env.NODE_ENV === "development" && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
@@ -62,10 +68,10 @@ const Navbar = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("pt")}>
                     <span className="mr-2">🇧🇷</span> Português
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("en")}>
                     <span className="mr-2">🇺🇸</span> English
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -74,7 +80,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          {import.meta.env.MODE !== "production" && (
+          {process.env.NODE_ENV === "development" && (
             <div className="md:hidden flex items-center space-x-4">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -87,10 +93,10 @@ const Navbar = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("pt")}>
                     <span className="mr-2">🇧🇷</span> Português
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => toggleLanguage()}>
+                  <DropdownMenuItem onClick={() => changeLocale("en")}>
                     <span className="mr-2">🇺🇸</span> English
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -119,9 +125,9 @@ const Navbar = () => {
                 </a>
               ))}
 
-              {import.meta.env.MODE !== "production" && (
+              {process.env.NODE_ENV === "development" && (
                 <Button className="w-full bg-theme-warning hover:bg-theme-warning/90 text-white mt-4">
-                  Inscreva-se
+                  {t("register")}
                 </Button>
               )}
             </div>
