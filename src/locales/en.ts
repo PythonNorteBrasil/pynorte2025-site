@@ -7,11 +7,12 @@ export default {
   // Component -> Contact
   'component.contact.title': "Our contacts",
   // Component -> Footer
-  'component.footer.adquireTicket': "Acquire your ticket",
-  'component.footer.beASponsor': "Be a Sponsor",
+  'component.footer.aboutTheEvent': "About the Event",
   'component.footer.eventLocation': "Event Location",
-  'component.footer.description': "Python Norte is a non-profit conference organized by volunteers to promote the Python programming language. It is supported by the Python Brasil Association (APyB).",
-  'component.footer.quickLinks': "Quick Links",
+  'component.footer.experts': "Experts",
+  'component.footer.program': "Program",
+  'component.footer.questions': "Questions",
+  'component.footer.sponsors': "Sponsors",
   // Component -> Hero
   'component.hero.description': "The largest Python event in the North region of Brazil. Join us in Belém, Pará for three days of learning, networking and Amazonian culture.",
   'component.hero.register': "Register",

@@ -19,7 +19,7 @@ const FAQ = () => {
   const faqs = locale === "pt" ? faqsPt : faqsEn;
 
   return (
-    <section className="py-20 bg-theme-background">
+    <section id="faq" className="py-20 bg-theme-background">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-4xl font-bold text-jambu text-center mb-12">
           {t("title")}

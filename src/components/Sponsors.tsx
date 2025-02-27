@@ -15,7 +15,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="sponsors" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-theme-green text-center mb-12">
           {t("title")}
