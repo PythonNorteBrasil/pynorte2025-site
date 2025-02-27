@@ -1,45 +1,45 @@
 "use client"
 
-import { useScopedI18n } from '@/locales/client'
+import { useCurrentLocale, useScopedI18n } from '@/locales/client'
+import { Button } from "./ui/button"
 
 const Footer = () => {
   const t = useScopedI18n("component.footer");
+  const locale = useCurrentLocale()
 
-  const quickLinks = [
-    { name: t("adquireTicket"), href: "#" },
-    { name: t("beASponsor"), href: "#" },
-    { name: t("eventLocation"), href: "#" },
+  const menuItems = [
+    ...(process.env.NODE_ENV === "development" ? [
+      { name: t("aboutTheEvent"), href: `/${locale}` },
+      { name: t("eventLocation"), href: `/${locale}` },
+      { name: t("experts"), href: `/${locale}` },
+      { name: t("program"), href: `/${locale}` },
+    ] : []),
+    { name: t("questions"), href: `/${locale}#faq` },
+    ...(process.env.NODE_ENV === "development" ? [
+      { name: t("sponsors"), href: `/${locale}` }
+    ] : []),
   ];
 
   return (
-    <footer className="bg-jambu text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Python Norte</h3>
-            <p className="max-w-md">
-              {t("description")}
-            </p>
-          </div>
+    <footer className="bg-vibora flex flex-col items-center justify-center py-12">
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <img
+          src="/logo_02.svg"
+          alt="Python Norte 2025"
+          className="h-20 mb-12"
+        />
 
-          {process.env.NODE_ENV === "development" && (
-            <div>
-              <h3 className="text-xl font-bold mb-4">{t("quickLinks")}</h3>
-              <ul className="space-y-2">
-                {quickLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="hover:text-jiboia transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
+        <nav className="flex flex-col items-center space-y-4">
+          {menuItems.map((item) => (
+            <Button
+              key={item.name}
+              asChild
+              className="bg-jiboia  text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-12 py-3 rounded-lg w-64"
+            >
+              <a href={item.href}>{item.name}</a>
+            </Button>
+          ))}
+        </nav>
       </div>
     </footer>
   );

@@ -7,11 +7,12 @@ export default {
   // Component -> Contact
   "component.contact.title": "Nossos contatos",
   // Component -> Footer
-  "component.footer.adquireTicket": "Adquira seu ingresso",
-  "component.footer.beASponsor": "Seja um Patrocinador",
+  "component.footer.aboutTheEvent": "Sobre o Evento",
   "component.footer.eventLocation": "Local do Evento",
-  "component.footer.description": "Python Norte é uma conferência sem fins lucrativos dirigida por voluntários para promover a linguagem de programação Python de código aberto. É apoiado pela Associação Python Brasil (APyB).",
-  "component.footer.quickLinks": "Links Rápidos",
+  "component.footer.experts": "Especialistas",
+  "component.footer.program": "Programação",
+  "component.footer.questions": "Perguntas Frequentes",
+  "component.footer.sponsors": "Patrocinadores",
   // Component -> Hero
   "component.hero.description": "O maior evento de Python da região Norte do Brasil. Junte-se a nós em Belém do Pará para três dias de aprendizado, networking e cultura amazônica.",
   "component.hero.register": "Inscreva-se",
