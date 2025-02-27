@@ -6,6 +6,7 @@ export default {
   "component.menu.register": "Inscreva-se",
   // Component -> Contact
   "component.contact.title": "Nossos contatos",
+  "component.contact.buyTicket": "Adquira seu Ingresso",
   // Component -> Footer
   "component.footer.aboutTheEvent": "Sobre o Evento",
   "component.footer.eventLocation": "Local do Evento",
