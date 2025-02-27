@@ -1,62 +1,78 @@
 "use client"
 
 import React from 'react';
-
-import { Mail, X } from "lucide-react";
-import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
-import { useScopedI18n } from '@/locales/client'
+import { useScopedI18n } from '@/locales/client';
+import { Button } from "./ui/button";
 
 const Contact = () => {
   const t = useScopedI18n("component.contact");
 
   const socialLinks = [
     {
-      icon: X,
-      href: "https://twitter.com/pythonnortebr",
-      label: "Twitter",
-    },
-    {
-      icon: SiInstagram,
-      href: "https://www.instagram.com/pythonnortebrasil/",
-      label: "Instagram",
-    },
-    {
-      icon: SiFacebook,
-      href: "https://www.facebook.com/profile.php?id=61568143374581",
-      label: "Facebook",
-    },
-    {
-      icon: SiLinkedin,
+      icon: "/social/Linkedin.svg",
       href: "https://www.linkedin.com/company/pynorte/",
       label: "LinkedIn",
     },
     {
-      icon: Mail,
-      href: "mailto:pynorteam@gmail.com",
-      label: "Email",
+      icon: "/social/Instagram.svg",
+      href: "https://www.instagram.com/pythonnortebrasil/",
+      label: "Instagram",
+    },
+    {
+      icon: "/social/Facebook.svg",
+      href: "https://www.facebook.com/profile.php?id=61568143374581",
+      label: "Facebook",
+    },
+    {
+      icon: "/social/Telegram.svg",
+      href: "https://t.me/python_norte",
+      label: "Telegram",
+    },
+    {
+      icon: "/social/X.svg",
+      href: "https://twitter.com/pythonnortebr",
+      label: "X (Twitter)",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-jambu mb-12">
-          {t("title")}
-        </h2>
-        <div className="flex justify-center space-x-8">
-          {socialLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-jiboia hover:text-jambu transition-colors"
-              aria-label={link.label}
+    <>
+      <img src="/background_bottom.png" alt="Background" className="w-full h-auto" />
+      <section className="py-20 bg-vibora">
+
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-tacaca mb-16">
+            Mídias Sociais
+          </h2>
+          <div className="flex justify-center items-center space-x-8 mb-16">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="transition-transform hover:scale-110"
+                aria-label={link.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={link.icon}
+                  alt={link.label}
+                  className="w-12 h-12"
+                />
+              </a>
+            ))}
+          </div>
+          {process.env.NODE_ENV === "development" && (
+            <Button
+              asChild
+              className="bg-jiboia  text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium w-full max-w-2xl"
             >
-              <link.icon size={32} />
-            </a>
-          ))}
+              <a href="#tickets">{t("buyTicket")}</a>
+            </Button>
+          )}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
