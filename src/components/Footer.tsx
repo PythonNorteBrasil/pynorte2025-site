@@ -13,10 +13,8 @@ const Footer = () => {
       { name: t("eventLocation"), href: `/${locale}` },
       { name: t("experts"), href: `/${locale}` },
       { name: t("program"), href: `/${locale}` },
-    ] : []),
-    { name: t("questions"), href: `/${locale}#faq` },
-    ...(process.env.NODE_ENV === "development" ? [
-      { name: t("sponsors"), href: `/${locale}` }
+      { name: t("questions"), href: `/${locale}#faq` },
+      { name: t("sponsors"), href: `/${locale}` },
     ] : []),
   ];
 

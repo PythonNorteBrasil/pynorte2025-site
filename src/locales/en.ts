@@ -6,6 +6,7 @@ export default {
   'component.menu.register': "Register",
   // Component -> Contact
   'component.contact.title': "Our contacts",
+  'component.contact.buyTicket': "Buy Ticket",
   // Component -> Footer
   'component.footer.aboutTheEvent': "About the Event",
   'component.footer.eventLocation': "Event Location",
