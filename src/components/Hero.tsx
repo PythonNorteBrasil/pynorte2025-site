@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden mt-10">
       <div className="container mx-auto px-0 py-16 relative">
-        <div className="flex flex-col lg:flex-row items-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:text-left lg:flex lg:justify-start">
           <div className="w-full lg:w-1/2 text-center px-4">
             <div className="flex justify-center">
               <img
@@ -89,7 +89,7 @@ const Hero = () => {
             )}
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
+          <div className="w-full lg:w-1/2 flex justify-center items-center lg:justify-end">
             <div className="relative xl:rounded-br-lg overflow-hidden">
               <img
                 src="/event-participants.png"
