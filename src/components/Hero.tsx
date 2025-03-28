@@ -18,7 +18,7 @@ const Hero = () => {
     currentDate.getFullYear() === eventDate.getFullYear();
 
   return (
-    <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden">
+    <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden mt-10">
       <div className="container mx-auto px-0 py-16 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 text-center px-4">
