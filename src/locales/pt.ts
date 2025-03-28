@@ -18,6 +18,11 @@ export default {
   "component.hero.description": "O maior evento de Python do região norte do Brasil. Junte-se a nós em Belém do Pará para 3 dias de aprendizado, networking e cultura amazôniza.",
   "component.hero.register": "Adquira seu Ingresso",
   "component.hero.countdown": "Contagem Regressiva",
+  "component.hero.ourEventIsHere": "Chegou nosso encontro!",
+  "component.hero.watchKeynotes": "Assista a transmissão de nossos Keynotes!",
+  "component.hero.missItAlready": "Saudades maninho?",
+  "component.hero.accessRepository": "Acesse nosso repositório e guarda de lembrança!",
+  "component.hero.photosAndMaterials": "Fotos e materiais de apoio",
   "component.hero.timer.days": "Dias",
   // Component -> Countdown Timer
   "component.hero.timer.hours": "Horas",

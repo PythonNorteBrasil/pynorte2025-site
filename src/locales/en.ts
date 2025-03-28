@@ -18,6 +18,11 @@ export default {
   'component.hero.description': "The largest Python event in the North region of Brazil. Join us in Belém, Pará for three days of learning, networking and Amazonian culture.",
   'component.hero.register': "Register",
   'component.hero.countdown': "Countdown",
+  'component.hero.ourEventIsHere': "Our event is here!",
+  'component.hero.watchKeynotes': "Watch our Keynotes livestream!",
+  'component.hero.missItAlready': "Missing it already?",
+  'component.hero.accessRepository': "Access our repository and save memories!",
+  'component.hero.photosAndMaterials': "Photos and support materials",
   // Component -> Countdown Timer
   'component.hero.timer.days': "Days",
   'component.hero.timer.hours': "Hours",

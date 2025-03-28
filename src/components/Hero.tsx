@@ -9,6 +9,14 @@ const Hero = () => {
   // Python Norte 2025 event date (July 4, 2025 at 9:00 AM UTC-3)
   const eventDate = new Date("2025-07-04T12:00:00Z");
 
+  const currentDate = new Date();
+  const isEventDay = currentDate.getDate() === 4 &&
+    currentDate.getMonth() === eventDate.getMonth() &&
+    currentDate.getFullYear() === eventDate.getFullYear();
+  const isPostEventDay = currentDate.getDate() === 8 &&
+    currentDate.getMonth() === eventDate.getMonth() &&
+    currentDate.getFullYear() === eventDate.getFullYear();
+
   return (
     <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden">
       <div className="container mx-auto px-0 py-16 relative">
@@ -26,8 +34,8 @@ const Hero = () => {
               {t("description")}
             </p>
 
-            <div className="flex flex-row items-end justify-between gap-8 mb-6">
-              <div className="w-full flex justify-start">
+            <div className="flex flex-row items-end justify-between gap-2 mb-6">
+              <div className="w-1/2 flex justify-start">
                 <a
                   href="https://open.spotify.com/show/4RcjjmDqQcDCAK6mrRjCmO"
                   target="_blank"
@@ -42,9 +50,33 @@ const Hero = () => {
                 </a>
               </div>
 
-              <div className="flex flex-col justify-end items-end">
-                <h3 className=" text-2xl text-acai mb-2 font-medium text-center lg:text-right">{t("countdown")}</h3>
-                <CountdownTimer targetDate={eventDate} />
+              <div className="w-full flex flex-col justify-end items-end">
+                {!isEventDay && !isPostEventDay && (
+                  <>
+                    <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">{t("countdown")}</h3>
+                    <CountdownTimer targetDate={eventDate} />
+                  </>
+                )}
+                {isEventDay && (
+                  <div className="flex flex-col items-end w-full">
+                    <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
+                      {t("ourEventIsHere")}
+                    </div>
+                    <div className="bg-[#F28E89] rounded-lg px-4 py-2 text-center lg:text-right text-acai w-full">
+                      {t("watchKeynotes")}
+                    </div>
+                  </div>
+                )}
+                {isPostEventDay && (
+                  <div className="flex flex-col items-end w-full">
+                    <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
+                      {t("missItAlready")}
+                    </div>
+                    <div className="bg-[#F28E89] rounded-lg px-4 py-2 text-center lg:text-right text-acai w-full">
+                      {t("accessRepository")}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
