@@ -56,7 +56,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-8">
               {process.env.NODE_ENV === "development" && (
                 <Button className="bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
-                  Adquira seu Ingresso
+                  {t("register")}
                 </Button>
               )}
 
@@ -130,7 +130,7 @@ const Navbar = () => {
 
               {process.env.NODE_ENV === "development" && (
                 <Button className="w-full bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
-                  Adquira seu Ingresso
+                  {t("register")}
                 </Button>
               )}
             </div>

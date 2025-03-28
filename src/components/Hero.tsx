@@ -10,36 +10,59 @@ const Hero = () => {
   const eventDate = new Date("2025-07-04T12:00:00Z");
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden">
-      <div className="container mx-auto px-4 py-16 relative z-10">
+    <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden">
+      <div className="container mx-auto px-0 py-16 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8">
-          <div className="w-full lg:w-1/2 text-left">
-            <img
-              src="/logo_01.png"
-              alt="Python Norte 2025"
-              className="mb-6 h-32"
-            />
-            <h2 className="font-mono text-5xl text-[#5d2217] mb-4">de 4 a 6 de julho</h2>
-            <p className="font-mono text-xl md:text-2xl text-[#d42e12] mb-8 max-w-2xl">
+          <div className="w-full lg:w-1/2 text-center px-4">
+            <div className="flex justify-center">
+              <img
+                src="/logo_01.svg"
+                alt="Python Norte 2025"
+                className="mb-4 h-40"
+              />
+            </div>
+
+            <p className="text-xl md:text-2xl font-medium text-jiboia-light mb-8 max-w-2xl mx-auto">
               {t("description")}
             </p>
 
-            <div className="mt-8">
-              <h3 className="text-2xl text-[#5d2217] mb-2">Contagem Regressiva</h3>
-              <CountdownTimer targetDate={eventDate} />
+            <div className="flex flex-row items-end justify-between gap-8 mb-6">
+              <div className="w-full flex justify-start">
+                <a
+                  href="https://open.spotify.com/show/4RcjjmDqQcDCAK6mrRjCmO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  <img
+                    src="/vinil_para.png"
+                    alt="Vinil"
+                    className="max-h-[130px] object-contain"
+                  />
+                </a>
+              </div>
+
+              <div className="flex flex-col justify-end items-end">
+                <h3 className=" text-2xl text-acai mb-2 font-medium text-center lg:text-right">{t("countdown")}</h3>
+                <CountdownTimer targetDate={eventDate} />
+              </div>
             </div>
 
-            <Button className="bg-[#a52a2a] hover:bg-[#8b0000] text-white text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto">
-              Adquira seu Ingresso
-            </Button>
+            {process.env.NODE_ENV === "development" && (
+              <div className="flex justify-center">
+                <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
+                  {t("register")}
+                </Button>
+              </div>
+            )}
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <div className="relative rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+            <div className="relative xl:rounded-br-lg overflow-hidden">
               <img
                 src="/event-participants.png"
                 alt="Python Norte participants"
-                className="max-h-[600px] w-full object-cover"
+                className="max-h-[350px] sm:max-h-[600px] w-full object-cover"
               />
             </div>
           </div>

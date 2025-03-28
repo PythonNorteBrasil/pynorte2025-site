@@ -17,7 +17,12 @@ export default {
   // Component -> Hero
   'component.hero.description': "The largest Python event in the North region of Brazil. Join us in Belém, Pará for three days of learning, networking and Amazonian culture.",
   'component.hero.register': "Register",
-  'component.hero.date': "July 4-6, 2025 • Belém, Pará",
+  'component.hero.countdown': "Countdown",
+  // Component -> Countdown Timer
+  'component.hero.timer.days': "Days",
+  'component.hero.timer.hours': "Hours",
+  'component.hero.timer.minutes': "Minutes",
+  'component.hero.timer.seconds': "Seconds",
   // Component -> Location
   'component.location.title': "Event Location",
   'component.location.description': "The Python Norte 2025 will be held at the University of Amazonia (UNAMA) of Alcindo Cacela, providing a complete structure for the event with easy access. The Alcindo Cacela campus is one of the main educational reference points in Belém.",

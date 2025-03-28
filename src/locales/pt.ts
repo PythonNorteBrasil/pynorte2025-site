@@ -3,7 +3,7 @@ export default {
   "component.menu.home": "Início",
   "component.menu.calendar": "Calendário",
   "component.menu.codeOfConduct": "Código de Conduta",
-  "component.menu.register": "Inscreva-se",
+  "component.menu.register": "Adquira seu Ingresso",
   // Component -> Contact
   "component.contact.title": "Nossos contatos",
   "component.contact.buyTicket": "Adquira seu Ingresso",
@@ -15,9 +15,14 @@ export default {
   "component.footer.questions": "Perguntas Frequentes",
   "component.footer.sponsors": "Patrocinadores",
   // Component -> Hero
-  "component.hero.description": "O maior evento de Python da região Norte do Brasil. Junte-se a nós em Belém do Pará para três dias de aprendizado, networking e cultura amazônica.",
-  "component.hero.register": "Inscreva-se",
-  "component.hero.date": "4 a 6 de Julho de 2025 • Belém, Pará",
+  "component.hero.description": "O maior evento de Python do região norte do Brasil. Junte-se a nós em Belém do Pará para 3 dias de aprendizado, networking e cultura amazôniza.",
+  "component.hero.register": "Adquira seu Ingresso",
+  "component.hero.countdown": "Contagem Regressiva",
+  "component.hero.timer.days": "Dias",
+  // Component -> Countdown Timer
+  "component.hero.timer.hours": "Horas",
+  "component.hero.timer.minutes": "Minutos",
+  "component.hero.timer.seconds": "Segundos",
   // Component -> Location
   "component.location.title": "Local do Evento",
   "component.location.description": "O Python Norte 2025 será realizado na Universidade da Amazônia (UNAMA) da Alcindo Cacela, proporcionando uma estrutura completa para o evento com fácil acesso. O campus Alcindo Cacela é um dos principais pontos de referência educacional de Belém.",

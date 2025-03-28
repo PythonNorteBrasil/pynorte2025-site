@@ -32,7 +32,9 @@ export default {
         "vibora": "#057ca4",  // Víbora 02
         "jambu": "#41501f", // Jambu 03
         "jiboia": "#7d1d1d", // Jiboia 06
+        "jiboia-light": "#de3e2e", // Jiboia 02
         "camarao": "#f28e89", // Camarão 01
+        "camarao-light": "#ed6954", // Camarão 02
         "tacaca": "#f8f4b7",  // Tacacá 01
         "cabocla": "#d75941", // Cabocla 01
 
