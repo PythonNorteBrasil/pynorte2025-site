@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { useChangeLocale, useScopedI18n, useCurrentLocale } from '@/locales/client'
+import Link from "next/link";
 
 const Navbar = () => {
   const t = useScopedI18n("component.menu");
@@ -54,11 +55,11 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center space-x-8">
-              {process.env.NODE_ENV === "development" && (
+              <Link href="https://www.even3.com.br/python-norte-2025/">
                 <Button className="bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
                   {t("register")}
                 </Button>
-              )}
+              </Link>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -83,35 +84,33 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          {process.env.NODE_ENV === "development" && (
-            <div className="md:hidden flex items-center space-x-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="text-tacaca hover:text-white h-12 w-12"
-                  >
-                    <Languages className="h-6 w-6" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => changeLocale("pt")}>
-                    <span className="mr-2">🇧🇷</span> Português
-                  </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => changeLocale("en")}>
-                    <span className="mr-2">🇺🇸</span> English
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-tacaca hover:text-white transition-colors h-12 w-12"
-              >
-                {isOpen ? <X size={28} /> : <Menu size={28} />}
-              </button>
-            </div>
-          )}
+          <div className="md:hidden flex items-center space-x-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-tacaca hover:text-white h-12 w-12"
+                >
+                  <Languages className="h-6 w-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => changeLocale("pt")}>
+                  <span className="mr-2">🇧🇷</span> Português
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLocale("en")}>
+                  <span className="mr-2">🇺🇸</span> English
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-tacaca hover:text-white transition-colors h-12 w-12"
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -128,16 +127,16 @@ const Navbar = () => {
                 </a>
               ))}
 
-              {process.env.NODE_ENV === "development" && (
+              <Link href="https://www.even3.com.br/python-norte-2025/">
                 <Button className="w-full bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
                   {t("register")}
                 </Button>
-              )}
+              </Link>
             </div>
           </div>
         )}
       </div>
-    </nav>
+    </nav >
   );
 };
 

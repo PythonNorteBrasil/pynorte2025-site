@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useScopedI18n } from "@/locales/client";
 import CountdownTimer from "./CountdownTimer";
+import Link from "next/link";
 
 const Hero = () => {
   const t = useScopedI18n("component.hero");
@@ -37,7 +38,7 @@ const Hero = () => {
             <div className="flex flex-row items-end justify-between gap-2 mb-6">
               <div className="w-1/2 flex justify-start">
                 <a
-                  href="https://open.spotify.com/show/4RcjjmDqQcDCAK6mrRjCmO"
+                  href="https://open.spotify.com/playlist/4fApbcmVbmYJcUIXYtxwUw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer"
@@ -80,13 +81,13 @@ const Hero = () => {
               </div>
             </div>
 
-            {process.env.NODE_ENV === "development" && (
-              <div className="flex justify-center">
+            <div className="flex justify-center">
+              <Link href="https://www.even3.com.br/python-norte-2025/">
                 <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
                   {t("register")}
                 </Button>
-              </div>
-            )}
+              </Link>
+            </div>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:justify-end">
