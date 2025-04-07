@@ -8,7 +8,7 @@
     {
       "id": 2,
       "question": "Is the Python Norte 2025 paid?",
-      "answer": "More information coming soon."
+      "answer": "Yes, more information about price see the 'Buy Ticket' item in the menu."
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
     {
       "id": 4,
       "question": "Where and when will the Python Norte 2025 be held? In-person or online?",
-      "answer": "The Python Norte 2025 will be held in-person. More information coming soon."
+      "answer": "The Python Norte 2025 will be held in-person, at the University of Amazonia (UNAMA) of Alcindo Cacela"
     },
     {
       "id": 5,
@@ -28,7 +28,7 @@
     {
       "id": 6,
       "question": "How can I register?",
-      "answer": "More information coming soon."
+      "answer": "Through our site, you can register for the event and acquire your ticket through the 'Buy Ticket' link in the menu."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "id": 2,
       "question": "A Python Norte 2025 é paga?",
-      "answer": "Mais informações em breve."
+      "answer": "Sim, mais informações sobre preço veja no item do menu 'Adquira seu Ingresso'."
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
     {
       "id": 4,
       "question": "Onde e quando será realizado o Python Norte 2025? Presencial ou on-line?",
-      "answer": "A Python Norte 2025 será realizado na modalidade presencial. Mais informações em breve."
+      "answer": "A Python Norte 2025 será realizado na modalidade presencial, na Universidade da Amazônia (UNAMA) da Alcindo Cacela"
     },
     {
       "id": 5,
@@ -28,7 +28,7 @@
     {
       "id": 6,
       "question": "Como posso me inscrever?",
-      "answer": "Mais informações em breve."
+      "answer": "Atráves do nosso site, você pode se inscrever no evento e adquirir seu ingresso atráves do link 'Adquira seu Ingresso' no menu."
     }
   ]
 }

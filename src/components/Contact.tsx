@@ -3,6 +3,7 @@
 import React from 'react';
 import { useScopedI18n } from '@/locales/client';
 import { Button } from "./ui/button";
+import Link from 'next/link';
 
 const Contact = () => {
   const t = useScopedI18n("component.contact");
@@ -62,14 +63,15 @@ const Contact = () => {
               </a>
             ))}
           </div>
-          {process.env.NODE_ENV === "development" && (
+          <Link href="https://www.even3.com.br/python-norte-2025/">
             <Button
               asChild
-              className="bg-jiboia  text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium w-full max-w-2xl"
+              size="lg"
+              className="bg-jiboia text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium w-full max-w-2xl"
             >
               <a href="#tickets">{t("buyTicket")}</a>
             </Button>
-          )}
+          </Link>
         </div>
       </section>
     </>

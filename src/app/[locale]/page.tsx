@@ -9,14 +9,14 @@ const Index = () => {
   return (
     <>
       <Hero />
+      <Location />
       {process.env.NODE_ENV === "development" && (
         <>
-          <Location />
           <Schedule />
           <Sponsors />
-          <FAQ />
         </>
       )}
+      <FAQ />
       <Contact />
     </>
   );
