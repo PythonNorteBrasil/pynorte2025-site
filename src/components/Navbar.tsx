@@ -22,6 +22,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: t("home"), href: `/${locale}` },
+    { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
     ...(process.env.NODE_ENV === "development" ? [
       { name: t("calendar"), href: `/${locale}/calendar` },
     ] : []),
