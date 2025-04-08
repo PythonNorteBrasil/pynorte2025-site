@@ -4,6 +4,7 @@ export default {
   'component.menu.calendar': "Calendar",
   'component.menu.codeOfConduct': "Code of Conduct",
   'component.menu.register': "Register",
+  'component.menu.submitTalk': "Submit Talk",
   // Component -> Contact
   'component.contact.title': "Our contacts",
   'component.contact.buyTicket': "Buy Ticket",
@@ -14,6 +15,7 @@ export default {
   'component.footer.program': "Program",
   'component.footer.questions': "Questions",
   'component.footer.sponsors': "Sponsors",
+  'component.footer.submitTalk': "Submit Talk",
   // Component -> Hero
   'component.hero.description': "The largest Python event in the North region of Brazil. Join us in Belém, Pará for three days of learning, networking and Amazonian culture.",
   'component.hero.register': "Register",

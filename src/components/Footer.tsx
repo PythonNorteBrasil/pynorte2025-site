@@ -16,6 +16,7 @@ const Footer = () => {
       { name: t("questions"), href: `/${locale}#faq` },
       { name: t("sponsors"), href: `/${locale}` },
     ] : []),
+    { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
   ];
 
   return (

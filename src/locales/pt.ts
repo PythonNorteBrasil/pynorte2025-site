@@ -4,6 +4,7 @@ export default {
   "component.menu.calendar": "Calendário",
   "component.menu.codeOfConduct": "Código de Conduta",
   "component.menu.register": "Adquira seu Ingresso",
+  "component.menu.submitTalk": "Submeter Palestra",
   // Component -> Contact
   "component.contact.title": "Nossos contatos",
   "component.contact.buyTicket": "Adquira seu Ingresso",
@@ -14,6 +15,7 @@ export default {
   "component.footer.program": "Programação",
   "component.footer.questions": "Perguntas Frequentes",
   "component.footer.sponsors": "Patrocinadores",
+  "component.footer.submitTalk": "Submeter Palestra",
   // Component -> Hero
   "component.hero.description": "O maior evento de Python do região norte do Brasil. Junte-se a nós em Belém do Pará para 3 dias de aprendizado, networking e cultura amazôniza.",
   "component.hero.register": "Adquira seu Ingresso",
