@@ -10,9 +10,9 @@ const Index = () => {
     <div className="bg-theme-background">
       <Hero />
       <Location />
+      <Schedule />
       {process.env.NODE_ENV === "development" && (
         <>
-          <Schedule />
           <Sponsors />
         </>
       )}

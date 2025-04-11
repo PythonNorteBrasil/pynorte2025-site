@@ -40,11 +40,9 @@ export default {
   "component.faq.title": "Perguntas Frequentes",
   // Component -> Schedule
   "component.schedule.title": "Programação",
-  "component.schedule.calendar": "Ver Calendário Completo",
   // Page -> Calendar
-  "page.calendar.thursday": "Quinta-feira, 4 de julho",
-  "page.calendar.friday": "Sexta-feira, 5 de julho",
-  "page.calendar.saturday": "Sábado, 6 de julho",
+  "page.calendar.friday": "Sexta-feira, 4 de julho",
+  "page.calendar.saturday": "Sábado, 5 de julho",
   "page.calendar.title": "Calendário do Evento",
   // Page -> Code of Conduct
   "page.codeOfConduct.title": "Código de Conduta",

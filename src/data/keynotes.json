@@ -2,43 +2,122 @@
   "keynotes": [
     {
       "id": 1,
-      "name": "Dr. Ana Silva",
+      "name": "Palestrante Keynote 1",
       "avatar": "https://avatar.iran.liara.run/public/1",
-      "title": "Python na Amazônia: Tecnologia e Sustentabilidade",
-      "description": "Uma análise profunda sobre como Python está sendo usado para monitoramento ambiental e preservação da Amazônia.",
-      "time": "4 de Julho - 10:00"
+      "title": "Keynote de Abertura",
+      "description": "Keynote de abertura da Python Norte 2025.",
+      "time": "4 de Julho - 10:00",
+      "day": 1
     },
     {
       "id": 2,
-      "name": "Carlos Santos",
+      "name": "Palestrante Keynote 2",
       "avatar": "https://avatar.iran.liara.run/public/2",
-      "title": "Machine Learning com Sabor Paraense",
-      "description": "Aplicações práticas de machine learning usando dados regionais para resolver problemas locais.",
-      "time": "5 de Julho - 14:00"
+      "title": "Keynote da Tarde",
+      "description": "Keynote da tarde na Python Norte 2025.",
+      "time": "4 de Julho - 15:30",
+      "day": 1
     },
     {
       "id": 3,
-      "name": "Maria Costa",
+      "name": "Palestrante Keynote 3",
       "avatar": "https://avatar.iran.liara.run/public/3",
-      "title": "Django: Construindo o Futuro do Norte",
-      "description": "Como o framework Django está impulsionando startups e empresas da região Norte.",
-      "time": "6 de Julho - 11:00"
+      "title": "Keynote da Manhã",
+      "description": "Keynote da manhã do segundo dia da Python Norte.",
+      "time": "5 de Julho - 10:30",
+      "day": 2
     },
     {
       "id": 4,
-      "name": "Pedro Oliveira",
+      "name": "Palestrante Keynote 4",
       "avatar": "https://avatar.iran.liara.run/public/4",
-      "title": "Data Science e Biodiversidade",
-      "description": "Utilizando Python para análise de dados da biodiversidade amazônica.",
-      "time": "5 de Julho - 16:00"
+      "title": "Keynote de Encerramento",
+      "description": "Keynote de encerramento da Python Norte 2025.",
+      "time": "5 de Julho - 15:00",
+      "day": 2
     },
     {
       "id": 5,
-      "name": "Julia Lima",
+      "name": "Palestrante Keynote 5",
       "avatar": "https://avatar.iran.liara.run/public/5",
-      "title": "FastAPI na Prática",
-      "description": "Construindo APIs modernas e eficientes com FastAPI para aplicações escaláveis.",
-      "time": "4 de Julho - 14:00"
+      "title": "Palestra - Comunidades",
+      "description": "Palestra sobre comunidades Python no Brasil.",
+      "time": "5 de Julho - 16:00",
+      "day": 2
+    }
+  ],
+  "activities": [
+    {
+      "id": 101,
+      "title": "Credenciamento",
+      "time": "08:00 - 09:00",
+      "day": 1
+    },
+    {
+      "id": 102,
+      "title": "Coffee Break",
+      "time": "09:00 - 09:30",
+      "day": 1
+    },
+    {
+      "id": 103,
+      "title": "Abertura da Python Norte 2025",
+      "time": "09:30 - 10:00",
+      "day": 1
+    },
+    {
+      "id": 104,
+      "title": "Palestra 1",
+      "time": "10:00 - 12:00",
+      "day": 1
+    },
+    {
+      "id": 105,
+      "title": "Palestra 2",
+      "time": "11:00 - 12:00",
+      "day": 1
+    },
+    {
+      "id": 106,
+      "title": "Palestras",
+      "time": "14:00 - 15:00",
+      "day": 1
+    },
+    {
+      "id": 107,
+      "title": "Palestras Relâmpagos",
+      "time": "15:00 - 15:30",
+      "day": 1
+    },
+    {
+      "id": 108,
+      "title": "Credenciamento",
+      "time": "08:00 - 09:00",
+      "day": 2
+    },
+    {
+      "id": 109,
+      "title": "Coffee Break",
+      "time": "09:00 - 09:30",
+      "day": 2
+    },
+    {
+      "id": 110,
+      "title": "Palestras",
+      "time": "09:30 - 10:30",
+      "day": 2
+    },
+    {
+      "id": 111,
+      "title": "Palestras Relâmpagos",
+      "time": "11:30 - 12:00",
+      "day": 2
+    },
+    {
+      "id": 112,
+      "title": "Tutoriais",
+      "time": "14:00 - 15:00",
+      "day": 2
     }
   ]
 }

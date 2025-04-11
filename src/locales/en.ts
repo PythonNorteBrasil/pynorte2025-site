@@ -40,12 +40,6 @@ export default {
   'component.faq.title': "Frequently Asked Questions",
   // Component -> Schedule
   'component.schedule.title': "Schedule",
-  'component.schedule.calendar': "View Full Calendar",
-  // Page -> Calendar
-  'page.calendar.thursday': "Thursday, July 4",
-  'page.calendar.friday': "Friday, July 5",
-  'page.calendar.saturday': "Saturday, July 6",
-  'page.calendar.title': "Event Calendar",
   // Page -> Code of Conduct
   'page.codeOfConduct.title': "Code of Conduct",
   'page.codeOfConduct.introduction': "The Python Norte event commits to providing a safe, inclusive and respectful environment for all people involved. Our goal is to promote the exchange of knowledge and experiences in a welcoming and pluralistic way.",
