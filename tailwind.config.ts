@@ -36,7 +36,8 @@ export default {
         "camarao": "#f28e89", // Camarão 01
         "camarao-light": "#ed6954", // Camarão 02
         "tacaca": "#f8f4b7",  // Tacacá 01
-        "cabocla": "#d75941", // Cabocla 01
+        "cabocla": "#d75941", // Cabocla 01,
+        "cabocla-alternative": "#351a1d", // Cabocla 07
 
         // shadcn/ui required colors
         border: "hsl(var(--border))",

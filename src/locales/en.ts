@@ -33,8 +33,6 @@ export default {
   // Component -> Location
   'component.location.title': "Event Location",
   'component.location.description': "The Python Norte 2025 will be held at the University of Amazonia (UNAMA) of Alcindo Cacela, providing a complete structure for the event with easy access. The Alcindo Cacela campus is one of the main educational reference points in Belém.",
-  'component.location.address.title': "Address",
-  'component.location.address.description': "Av. Alcindo Cacela, 287 - Umarizal, Belém - PA, 66060-902",
   'component.location.maps.title': "UNAMA Alcindo Cacela Map",
   // Component -> Sponsors
   'component.sponsors.title': "Sponsors",

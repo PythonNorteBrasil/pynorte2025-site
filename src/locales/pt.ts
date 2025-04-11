@@ -33,9 +33,7 @@ export default {
   // Component -> Location
   "component.location.title": "Local do Evento",
   "component.location.description": "O Python Norte 2025 será realizado na Universidade da Amazônia (UNAMA) da Alcindo Cacela, proporcionando uma estrutura completa para o evento com fácil acesso. O campus Alcindo Cacela é um dos principais pontos de referência educacional de Belém.",
-  "component.location.address.title": "Endereço",
-  "component.location.address.description": "Av. Alcindo Cacela, 287 - Umarizal, Belém - PA, 66060-902",
-  "component.location.maps.title": "UNAMA Alcindo Cacela",
+  "component.location.maps.title": "UNAMA Alcindo Cacela Map",
   // Component -> Sponsors
   "component.sponsors.title": "Patrocinadores",
   // Component -> FAQ

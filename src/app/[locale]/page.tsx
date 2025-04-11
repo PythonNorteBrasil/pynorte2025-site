@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <>
+    <div className="bg-theme-background">
       <Hero />
       <Location />
       {process.env.NODE_ENV === "development" && (
@@ -18,7 +18,7 @@ const Index = () => {
       )}
       <FAQ />
       <Contact />
-    </>
+    </div>
   );
 };
 
