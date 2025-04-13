@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { Menu, X, Languages } from "lucide-react";
@@ -15,18 +15,19 @@ import Link from "next/link";
 
 const Navbar = () => {
   const t = useScopedI18n("component.menu");
-  const locale = useCurrentLocale()
+  const locale = useCurrentLocale();
 
   const [isOpen, setIsOpen] = useState(false);
-  const changeLocale = useChangeLocale()
+  const changeLocale = useChangeLocale();
 
   const navItems = [
     { name: t("home"), href: `/${locale}` },
     { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
-    ...(process.env.NODE_ENV === "development" ? [
-      { name: t("calendar"), href: `/${locale}/calendar` },
-    ] : []),
+    ...(process.env.NODE_ENV === "development"
+      ? [{ name: t("calendar"), href: `/${locale}/calendar` }]
+      : []),
     { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
+    { name: t("description"), href: `/${locale}/description` },
   ];
 
   return (
@@ -34,11 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <img
-              src="/logo_02.svg"
-              alt="Python Norte 2025"
-              className="h-11"
-            />
+            <img src="/logo_02.svg" alt="Python Norte 2025" className="h-11" />
           </div>
 
           {/* Desktop Menu */}
