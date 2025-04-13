@@ -6,14 +6,14 @@ import EventInfos from "./EventInfos";
 
 const Description = () => {
   const t = useScopedI18n("page.description");
-    const locale = useCurrentLocale();
+  const locale = useCurrentLocale();
 
   return (
     <div
       id="description"
       className="relative lg:min-h-screen flex items-center justify-center bg-theme-background overflow-hidden lg:mb-36"
     >
-      <div className="container mx-auto px-0 py-16 relative lg:mb-24 ">
+      <div className="container mx-auto px-4 lg:p-0 pt-24 pb-8 relative lg:mb-24  ">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:text-left lg:flex lg:justify-between ">
           <div className="relative w-fit lg:m-5 hidden lg:block lg:w-1/2">
             <img
@@ -30,11 +30,11 @@ const Description = () => {
           </div>
 
           <div className="w-full lg:w-1/2 text-center px-4 ">
-            <h3 className="text-2xl text-acai mb-2 font-medium  lg:text-left">
+            <h3 className="text-2xl text-acai mb-2 font-medium text-left">
               {t("title")}
             </h3>
 
-            <p className="text-xl md:text-lg font-medium text-cabocla-alternative mb-8 max-w-2xl mx-auto lg:text-left">
+            <p className="text-xl md:text-lg font-medium text-cabocla-alternative mb-8 max-w-2xl mx-auto text-left">
               {t("intro")}
             </p>
 
