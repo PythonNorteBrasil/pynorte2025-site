@@ -13,7 +13,7 @@ const Description = () => {
       id="description"
       className="relative lg:min-h-screen flex items-center justify-center bg-theme-background overflow-hidden lg:mb-36"
     >
-      <div className="container mx-auto px-0 py-16 relative  ">
+      <div className="container mx-auto px-0 py-16 relative lg:mb-24 ">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:text-left lg:flex lg:justify-between ">
           <div className="relative w-fit lg:m-5 hidden lg:block lg:w-1/2">
             <img

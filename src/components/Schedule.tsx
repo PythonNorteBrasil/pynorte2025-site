@@ -71,7 +71,7 @@ const Schedule = () => {
   };
 
   return (
-    <section id="calendario" className="py-20 bg-theme-background">
+    <section id="schedule" className="py-20 bg-theme-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-[30px]">
           {/* Title */}

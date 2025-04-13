@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Menu, X, Languages } from "lucide-react";
 import { Button } from "./ui/button";
 import {
@@ -9,25 +10,50 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
-import { useChangeLocale, useScopedI18n, useCurrentLocale } from '@/locales/client'
+import {
+  useChangeLocale,
+  useScopedI18n,
+  useCurrentLocale,
+} from "@/locales/client";
 import Link from "next/link";
 
 const Navbar = () => {
   const t = useScopedI18n("component.menu");
   const locale = useCurrentLocale();
-
   const [isOpen, setIsOpen] = useState(false);
   const changeLocale = useChangeLocale();
+  const router = useRouter();
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
+    } else {
+      router.push(`/${locale}/#${id}`);
+    }
+  };
 
   const navItems = [
     { name: t("home"), href: `/${locale}` },
     { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
     ...(process.env.NODE_ENV === "development"
-      ? [{ name: t("calendar"), href: `/${locale}/calendar` }]
+      ? [
+          {
+            name: t("calendar"),
+            href: `/${locale}/#schedule`,
+            scroll: true,
+            id: "schedule",
+          },
+        ]
       : []),
     { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
-    { name: t("description"), href: `/${locale}/description` },
+    {
+      name: t("description"),
+      href: `/${locale}/#description`,
+      scroll: true,
+      id: "description",
+    },
   ];
 
   return (
@@ -39,17 +65,28 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center justify-between flex-1 pl-12">
+          <div className="hidden md:flex items-center justify-between flex-1 pl-12 scroll-smooth">
             <div className="flex items-center space-x-12">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-tacaca hover:text-white transition-colors text-md font-medium"
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.scroll ? (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-tacaca hover:text-white transition-colors text-md font-medium"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-tacaca hover:text-white transition-colors text-md font-medium"
+                    target={item.href.startsWith("http") ? "_blank" : "_self"}
+                  >
+                    {item.name}
+                  </a>
+                )
+              )}
             </div>
 
             <div className="flex items-center space-x-8">
@@ -115,15 +152,29 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-tacaca hover:text-white transition-colors text-lg font-medium"
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.scroll ? (
+                  <button
+                    key={item.name}
+                    onClick={() => {
+                      scrollToSection(item.id);
+                      setIsOpen(false);
+                    }}
+                    className="block w-full text-left px-3 py-2 text-tacaca hover:text-white transition-colors text-lg font-medium"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block px-3 py-2 text-tacaca hover:text-white transition-colors text-lg font-medium"
+                    target={item.href.startsWith("http") ? "_blank" : "_self"}
+                  >
+                    {item.name}
+                  </a>
+                )
+              )}
 
               <Link href="https://www.even3.com.br/python-norte-2025/">
                 <Button className="w-full bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
@@ -134,7 +185,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </nav >
+    </nav>
   );
 };
 
