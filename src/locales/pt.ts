@@ -81,7 +81,7 @@ export default {
     "Este Código de Conduta baseia-se na versão elaborada pela Python Brasil & APyB (Associação Python Brasil) - {link}",
   "page.codeOfConduct.closingStatements2.link":
     "Código de Conduta da Python Brasil",
-  "page.codeOfConduct.reportButton": "Denunciar",
+  "page.codeOfConduct.reportButton": "Enviar denúncia",
   // Page -> Description
   "page.description.title": "Sobre o Evento",
   "page.description.intro":

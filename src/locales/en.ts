@@ -75,7 +75,7 @@ export default {
   "page.codeOfConduct.closingStatements2":
     "This Code of Conduct is based on the version prepared by Python Brasil & APyB (Python Brasil Association) - {link}",
   "page.codeOfConduct.closingStatements2.link": "Python Brasil Code of Conduct",
-  "page.codeOfConduct.reportButton": "Report",
+  "page.codeOfConduct.reportButton": "Report an incident",
   // Page --> Description
   "page.description.title": "About the Event",
   "page.description.intro":

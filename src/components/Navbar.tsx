@@ -36,6 +36,12 @@ const Navbar = () => {
 
   const navItems = [
     { name: t("home"), href: `/${locale}` },
+    {
+      name: t("description"),
+      href: `/${locale}/#description`,
+      scroll: true,
+      id: "description",
+    },
     { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
     ...(process.env.NODE_ENV === "development"
       ? [
@@ -48,12 +54,6 @@ const Navbar = () => {
         ]
       : []),
     { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
-    {
-      name: t("description"),
-      href: `/${locale}/#description`,
-      scroll: true,
-      id: "description",
-    },
   ];
 
   return (
