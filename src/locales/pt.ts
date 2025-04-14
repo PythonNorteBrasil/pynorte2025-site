@@ -82,15 +82,15 @@ export default {
   "page.codeOfConduct.closingStatements2.link":
     "Código de Conduta da Python Brasil",
   "page.codeOfConduct.reportButton": "Enviar denúncia",
-  // Page -> Description
-  "page.description.title": "Sobre o Evento",
-  "page.description.intro":
+  // Page -> About the Event
+  "page.aboutTheEvent.title": "Sobre o Evento",
+  "page.aboutTheEvent.intro":
     "Python Norte é o evento sobre a linguagem de programação Python voltado para a região norte do Brasil, apoiado pela Python Brasil Association (ApyB) e pela PSF (Python Software Foundation).",
-  "page.description.intro2":
+  "page.aboutTheEvent.intro2":
     "Este ano, o evento acontecerá entre os dias  4 e 6 de julho na cidade de Belém, no Pará.",
-  "page.description.codeOfConduct-button": "Leia nosso Código de Conduta",
+  "page.aboutTheEvent.codeOfConduct.button": "Leia nosso Código de Conduta",
   // Component -> EventInfos
-  "component.description.eventInfos.days": "Dias de Evento",
-  "component.description.eventInfos.experts": "Especialistas",
-  "component.description.eventInfos.participants": "Participantes",
+  "component.aboutTheEvent.eventInfos.days": "Dias de Evento",
+  "component.aboutTheEvent.eventInfos.experts": "Especialistas",
+  "component.aboutTheEvent.eventInfos.participants": "Participantes",
 } as const;

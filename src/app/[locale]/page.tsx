@@ -4,13 +4,13 @@ import Schedule from "@/components/Schedule";
 import Sponsors from "@/components/Sponsors";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import Description from "@/components/Description";
+import AboutTheEvent from "@/components/AboutTheEvent";
 
 const Index = () => {
   return (
     <div className="bg-theme-background">
       <Hero />
-      <Description />
+      <AboutTheEvent />
       <Location />
       <Schedule />
       {process.env.NODE_ENV === "development" && (

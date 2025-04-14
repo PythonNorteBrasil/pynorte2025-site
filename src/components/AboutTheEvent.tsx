@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button";
 import { useCurrentLocale, useScopedI18n } from "@/locales/client";
 import EventInfos from "./EventInfos";
 
-const Description = () => {
-  const t = useScopedI18n("page.description");
+const AboutTheEvent = () => {
+  const t = useScopedI18n("page.aboutTheEvent");
   const locale = useCurrentLocale();
 
   return (
     <div
-      id="description"
+      id="about-the-event"
       className="relative lg:min-h-screen flex items-center justify-center bg-theme-background overflow-hidden lg:mb-36"
     >
       <div className="container mx-auto px-4 lg:p-0 pt-24 pb-8 relative lg:mb-24  ">
@@ -44,7 +44,7 @@ const Description = () => {
 
             <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors ">
               <a href={`/${locale}/code-of-conduct`}>
-                {t("codeOfConduct-button")}
+                {t("codeOfConduct.button")}
               </a>
             </Button>
 
@@ -58,4 +58,4 @@ const Description = () => {
   );
 };
 
-export default Description;
+export default AboutTheEvent;

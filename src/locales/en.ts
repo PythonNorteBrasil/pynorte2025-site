@@ -76,14 +76,14 @@ export default {
     "This Code of Conduct is based on the version prepared by Python Brasil & APyB (Python Brasil Association) - {link}",
   "page.codeOfConduct.closingStatements2.link": "Python Brasil Code of Conduct",
   "page.codeOfConduct.reportButton": "Report an incident",
-  // Page --> Description
-  "page.description.title": "About the Event",
-  "page.description.intro":
+  // Page --> About the Event
+  "page.aboutTheEvent.title": "About the Event",
+  "page.aboutTheEvent.intro":
     "Python Norte is an event about the Python programming language focused on the northern region of Brazil, supported by the Python Brasil Association (ApyB) and the Python Software Foundation (PSF).",
-  "page.description.intro2":
+  "page.aboutTheEvent.intro2":
     "This year, the event will take place from July 4th to 6th in the city of Belém, in the state of Pará.",
-  "page.description.codeOfConduct-button": "Read our Code of Conduct",
-  "component.description.eventInfos.days": "Event Days",
-  "component.description.eventInfos.experts": "Experts",
-  "component.description.eventInfos.participants": "Participants",
+  "page.aboutTheEvent.codeOfConduct.button": "Read our Code of Conduct",
+  "component.aboutTheEvent.eventInfos.days": "Event Days",
+  "component.aboutTheEvent.eventInfos.experts": "Experts",
+  "component.aboutTheEvent.eventInfos.participants": "Participants",
 } as const;

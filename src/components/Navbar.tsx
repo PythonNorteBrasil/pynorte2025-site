@@ -38,9 +38,9 @@ const Navbar = () => {
     { name: t("home"), href: `/${locale}` },
     {
       name: t("description"),
-      href: `/${locale}/#description`,
+      href: `/${locale}/#about-the-event`,
       scroll: true,
-      id: "description",
+      id: "about-the-event",
     },
     { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
     ...(process.env.NODE_ENV === "development"
