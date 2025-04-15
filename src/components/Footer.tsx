@@ -9,7 +9,7 @@ const Footer = () => {
 
   const menuItems = [
     ...(process.env.NODE_ENV === "development" ? [
-      { name: t("aboutTheEvent"), href: `/${locale}` },
+      { name: t("aboutTheEvent"), href: `/${locale}/#description` },
       { name: t("eventLocation"), href: `/${locale}` },
       { name: t("experts"), href: `/${locale}` },
       { name: t("program"), href: `/${locale}` },
