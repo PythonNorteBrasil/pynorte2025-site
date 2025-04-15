@@ -29,26 +29,28 @@ const AboutTheEvent = () => {
             />
           </div>
 
-          <div className="w-full lg:w-1/2 text-center px-4 ">
-            <h3 className="text-2xl text-acai mb-2 font-medium text-left">
+          <div className="w-full lg:w-1/2 text-center px-4 flex flex-col gap-8">
+            <h3 className="text-2xl text-acai font-medium text-left">
               {t("title")}
             </h3>
 
-            <p className="text-xl md:text-lg font-medium text-cabocla-alternative mb-8 max-w-2xl mx-auto text-left">
+            <p className="text-xl md:text-lg font-medium text-cabocla-alternative  max-w-2xl mx-auto text-left">
               {t("intro")}
             </p>
 
-            <h3 className="text-xl text-acai mb-2 font-medium  lg:text-center">
+            <h3 className="text-xl text-acai  font-medium  lg:text-center">
               {t("intro2")}
             </h3>
 
-            <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors ">
-              <a href={`/${locale}/code-of-conduct`}>
-                {t("codeOfConduct.button")}
-              </a>
-            </Button>
+            <div className="flex justify-center">
+              <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 rounded-md w-auto transition-colors mt-4 justify-center">
+                <a href={`/${locale}/code-of-conduct`}>
+                  {t("codeOfConduct.button")}
+                </a>
+              </Button>
+            </div>
 
-            <div className="flex justify-center lg:justify-center mt-6">
+            <div className="flex justify-center lg:justify-center mt-4">
               <EventInfos />
             </div>
           </div>
