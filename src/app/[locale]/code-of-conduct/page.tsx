@@ -156,7 +156,7 @@ const CodeOfConduct = () => {
       <img
         src="/boat.png"
         alt="Barco"
-        className="relative -bottom-2.5 mt-8  w-full z-10 max-h-[250px] sm:max-h-[250px] object-cover"
+        className="relative -bottom-2.5 mt-12  w-full z-10 max-h-[250px] sm:max-h-[250px] object-cover"
       />
     </div>
   );
