@@ -30,6 +30,7 @@ export default {
         // One color from each palette
         "acai": "#3b276b",    // Açaí 02
         "vibora": "#057ca4",  // Víbora 02
+        "vibora-alternative": "#0a4d9d", // Víbora 04
         "jambu": "#41501f", // Jambu 03
         "jiboia": "#7d1d1d", // Jiboia 06
         "jiboia-light": "#de3e2e", // Jiboia 02

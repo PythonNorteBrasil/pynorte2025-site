@@ -34,7 +34,7 @@ const CodeOfConduct = () => {
 
         {/* Rules Section */}
         <section className="space-y-6">
-          <h2 className="font-mono text-2xl text-blue-800 font-medium">
+          <h2 className="font-mono text-2xl  text-vibora-alternative font-medium  ">
             {t("rules.title")}
           </h2>
           <ol className="list-decimal list-inside space-y-2 text-lg text-cabocla-alternative ml-4">
@@ -46,7 +46,7 @@ const CodeOfConduct = () => {
 
         {/* Definitions Section */}
         <section className="space-y-6">
-          <h2 className="font-mono text-2xl text-blue-800">
+          <h2 className="font-mono text-2xl text-vibora-alternative">
             {t("definitions.title")}
           </h2>
           <ul className="list-disc list-inside space-y-2 text-lg text-cabocla-alternative ml-4">
@@ -66,7 +66,7 @@ const CodeOfConduct = () => {
             {t("additionalInformation2", {
               link: (
                 <a
-                  className="text-theme-warning hover:text-theme-warning/90 underline"
+                  className=" hover:text-jiboia underline"
                   href="https://forms.gle/e647Q7vXYhjFeN117"
                 >
                   {t("additionalInformation2.link")}
@@ -85,25 +85,78 @@ const CodeOfConduct = () => {
           <p className="text-lg leading-relaxed text-cabocla-alternative">
             {t("closingStatements1")}
           </p>
-
-          <p className="text-base leading-relaxed text-cabocla-alternative">
-            {t("closingStatements2", {
-              link: (
-                <a
-                  className="text-theme-warning hover:text-theme-warning/90 underline"
-                  href="https://apyb.python.org.br/pythonbrasil/cdc/"
-                >
-                  {t("closingStatements2.link")}
-                </a>
-              ),
-            })}
-          </p>
         </section>
+
+        {/* Response Team Section */}
+        <section className="space-y-4">
+          <h2 className="font-mono text-2xl text-vibora-alternative font-medium">
+            {t("responseTeam.title")}
+          </h2>
+          <ul className="list-disc list-inside text-lg text-cabocla-alternative ml-4 space-y-1">
+            <li>
+              Jailson Pereira –{" "}
+              <a
+                className="underline hover:text-jiboia "
+                href="mailto:jailsoncolares@gmail.com"
+              >
+                jailsoncolares@gmail.com
+              </a>
+            </li>
+
+            <li>
+              Juliany Raiol –{" "}
+              <a
+                className="underline hover:text-jiboia "
+                href="mailto:julianyraiol@gmai.com"
+              >
+                julianyraiol@gmai.com
+              </a>
+            </li>
+
+            <li>
+              Luiza Dias –{" "}
+              <a
+                className="underline hover:text-jiboia "
+                href="mailto:luiza8.marlene@gmail.com"
+              >
+                luiza8.marlene@gmail.com
+              </a>
+            </li>
+
+            <li>
+              Thatianne Maruyama –{" "}
+              <a
+                className="underline hover:text-jiboia "
+                href="mailto:thatianne.maruyama@gmail.com"
+              >
+                thatianne.maruyama@gmail.com
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <p className="text-base leading-relaxed text-cabocla-alternative">
+          {t("closingStatements2", {
+            link: (
+              <a
+                className=" hover:text-jiboia  underline"
+                href="https://apyb.python.org.br/pythonbrasil/cdc/"
+              >
+                {t("closingStatements2.link")}
+              </a>
+            ),
+          })}
+        </p>
       </article>
       <img
         src="/code-of-conduct-team.png"
-        alt="Palestrante"
+        alt="Imagem da Equipe de Resposta do Código de Conduta"
         className="relative  mt-12 w-full z-10 max-h-[320px] sm:max-h-[405px] object-cover"
+      />
+      <img
+        src="/boat.png"
+        alt="Barco"
+        className="relative -bottom-2.5 mt-12  w-full z-10 max-h-[250px] sm:max-h-[250px] object-cover"
       />
     </div>
   );
