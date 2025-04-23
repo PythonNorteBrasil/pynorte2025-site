@@ -82,6 +82,8 @@ export default {
   "page.codeOfConduct.closingStatements2.link":
     "Código de Conduta da Python Brasil",
   "page.codeOfConduct.reportButton": "Enviar denúncia",
+  "page.codeOfConduct.responseTeam.title":
+    "Equipe de Resposta do Código de Conduta",
   // Page -> About the Event
   "page.aboutTheEvent.title": "Sobre o Evento",
   "page.aboutTheEvent.intro":
