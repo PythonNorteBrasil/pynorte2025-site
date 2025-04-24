@@ -1,13 +1,7 @@
 "use client"
 
 import { useScopedI18n, useCurrentLocale } from "@/locales/client";
-
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { useState } from "react";
 
 import faqsEn from "@/data/faq.en.json";
 import faqsPt from "@/data/faq.pt.json";
@@ -15,31 +9,45 @@ import faqsPt from "@/data/faq.pt.json";
 const FAQ = () => {
   const t = useScopedI18n("component.faq");
   const locale = useCurrentLocale();
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const faqs = locale === "pt" ? faqsPt : faqsEn;
 
+  const toggleFaq = (id: number) => {
+    setOpenFaq(openFaq === id ? null : id);
+  };
+
   return (
     <section id="faq" className="py-20 bg-theme-background">
-      <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-4xl font-bold text-jambu text-center mb-12">
+      <div className="container mx-auto px-4">
+        <div className="inline-flex flex-col justify-start items-start gap-11 w-full">
+          <div className="self-stretch flex flex-col justify-start items-start gap-7">
+            <h2 className="self-stretch text-center text-acai text-3xl font-medium font-mono">
           {t("title")}
         </h2>
-        <Accordion type="single" collapsible className="space-y-4">
+          </div>
+
+          <div className="inline-flex flex-col justify-start items-start gap-3.5 w-full">
           {faqs.faqs.map((faq) => (
-            <AccordionItem
-              key={faq.id}
-              value={`item-${faq.id}`}
-              className="bg-white rounded-lg shadow-md"
+              <div key={faq.id} className="w-full">
+                <button
+                  className="self-stretch h-10 p-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2 w-full"
+                  onClick={() => toggleFaq(faq.id)}
             >
-              <AccordionTrigger className="px-6 text-jambu hover:text-jiboia">
+                  <div className="text-center text-acai text-base font-normal font-mono">
                 {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="px-6 text-jiboia">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+                  </div>
+                </button>
+
+                {openFaq === faq.id && (
+                  <div className="mt-2 p-4 bg-white rounded-lg">
+                    <p className="text-jiboia font-mono">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
           ))}
-        </Accordion>
+          </div>
+        </div>
       </div>
     </section>
   );
