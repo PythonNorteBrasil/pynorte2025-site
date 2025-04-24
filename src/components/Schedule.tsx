@@ -55,13 +55,13 @@ const Schedule = () => {
       <div className="flex flex-col gap-[15px] w-full">
         {sortedItems.map((item) => (
           <div key={`${item.type}-${item.id}`} className="flex w-full items-center gap-6">
-            <div className="w-[212px] bg-tacaca-alternative flex items-center gap-[9px] p-[6px]">
+            <div className="w-[212px] bg-tacaca-alternative flex items-center gap-[9px] p-[6px] rounded-[9px]">
               <Clock className="h-5 w-5 text-theme-primary" />
               <span className="text-theme-primary">
                 {item.time.includes(' - ') ? item.time.split(' - ')[1] : item.time}
               </span>
             </div>
-            <div className={`flex-1 bg-theme-primary flex justify-center items-center p-[6px]`}>
+            <div className={`flex-1 bg-theme-primary flex justify-center items-center p-[6px] rounded-[9px]`}>
               <span className="text-theme-background">{item.title}</span>
             </div>
           </div>
