@@ -31,7 +31,7 @@ const FAQ = () => {
           {faqs.faqs.map((faq) => (
               <div key={faq.id} className="w-full">
                 <button
-                  className="self-stretch h-10 p-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2 w-full"
+                  className="self-stretch w-full py-2.5 px-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2"
                   onClick={() => toggleFaq(faq.id)}
             >
                   <div className="text-center text-acai text-base font-normal font-mono">
