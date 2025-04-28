@@ -5,7 +5,9 @@ export default {
   "component.menu.codeOfConduct": "Código de Conduta",
   "component.menu.register": "Adquira seu Ingresso",
   "component.menu.submitTalk": "Submeter Palestra",
-  "component.menu.description": "Sobre o Evento",
+  "component.menu.description": "Sobre",
+  "component.menu.sponsors": "Patrocinadores",
+
   // Component -> Contact
   "component.contact.title": "Nossos contatos",
   "component.contact.buyTicket": "Adquira seu Ingresso",
@@ -40,6 +42,8 @@ export default {
   "component.location.maps.title": "UNAMA Alcindo Cacela Map",
   // Component -> Sponsors
   "component.sponsors.title": "Patrocinadores",
+  "component.sponsors.description": "A receita para o sucesso é simples: pessoas > tecnologia + muito suporte! Para que esse evento aconteça com a qualidade que todos merecem, precisamos da colaboração de empresas como a sua! Se sua marca quer estar no topo da panela Python e fazer parte de um evento impactante no Norte do país, temos um lugar na nossa banca de tacacá só para você!",
+  "component.sponsors.button": "Cheque nosso Plano de Patrocínio",
   // Component -> FAQ
   "component.faq.title": "Perguntas Frequentes",
   // Component -> Schedule
