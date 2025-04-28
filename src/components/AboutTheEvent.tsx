@@ -30,7 +30,7 @@ const AboutTheEvent = () => {
           </div>
 
           <div className="w-full lg:w-1/2 text-center px-4 flex flex-col gap-8">
-            <h3 className="text-2xl text-acai font-medium text-left">
+            <h3 className="text-3xl text-acai font-medium text-left font-mono">
               {t("title")}
             </h3>
 
@@ -43,7 +43,7 @@ const AboutTheEvent = () => {
             </h3>
 
             <div className="flex justify-center">
-              <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 rounded-md w-auto transition-colors mt-4 justify-center">
+              <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 rounded-[9px] w-auto transition-colors mt-4 justify-center">
                 <a href={`/${locale}/code-of-conduct`}>
                   {t("codeOfConduct.button")}
                 </a>
