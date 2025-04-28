@@ -23,19 +23,19 @@ const FAQ = () => {
         <div className="inline-flex flex-col justify-start items-start gap-11 w-full">
           <div className="self-stretch flex flex-col justify-start items-start gap-7">
             <h2 className="self-stretch text-center text-acai text-3xl font-medium font-mono">
-          {t("title")}
-        </h2>
+              {t("title")}
+            </h2>
           </div>
 
           <div className="inline-flex flex-col justify-start items-start gap-3.5 w-full">
-          {faqs.faqs.map((faq) => (
-              <div key={faq.id} className="w-full">
+            {faqs.faqs.map((faq) => (
+              <div key={faq.id} className="w-full ">
                 <button
-                  className="self-stretch h-10 p-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2 w-full"
+                  className="self-stretch h-10 p-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2 w-full rounded-[9px]"
                   onClick={() => toggleFaq(faq.id)}
-            >
+                >
                   <div className="text-center text-acai text-base font-normal font-mono">
-                {faq.question}
+                    {faq.question}
                   </div>
                 </button>
 
@@ -45,7 +45,7 @@ const FAQ = () => {
                   </div>
                 )}
               </div>
-          ))}
+            ))}
           </div>
         </div>
       </div>
