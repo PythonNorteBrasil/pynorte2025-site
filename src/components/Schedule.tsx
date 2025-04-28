@@ -61,7 +61,7 @@ const Schedule = () => {
             key={`${item.type}-${item.id}`}
             className="flex w-full items-center gap-6 "
           >
-            <div className="w-[212px] bg-tacaca-alternative flex items-center gap-[9px] p-[6px] rounded-[9px]">
+            <div className="sm:w-[212px] w-[100px] bg-tacaca-alternative flex items-center gap-[9px] p-[6px] rounded-[9px]">
               <Clock className="h-5 w-5 text-theme-primary" />
               <span className="text-theme-primary">
                 {item.time.includes(" - ")
@@ -72,7 +72,7 @@ const Schedule = () => {
             <div
               className={`flex-1 bg-theme-primary flex justify-center items-center p-[6px] rounded-[9px] `}
             >
-              <span className="text-theme-background">{item.title}</span>
+              <span className="text-theme-background text-center">{item.title}</span>
             </div>
           </div>
         ))}
