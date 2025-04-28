@@ -13,12 +13,8 @@ const Index = () => {
       <AboutTheEvent />
       <Location />
       <Schedule />
-      {process.env.NODE_ENV === "development" && (
-        <>
-          <Sponsors />
-        </>
-      )}
       <FAQ />
+      <Sponsors />
       <Contact />
     </div>
   );
