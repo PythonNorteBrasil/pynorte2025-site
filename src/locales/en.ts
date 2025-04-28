@@ -5,7 +5,8 @@ export default {
   "component.menu.codeOfConduct": "Code of Conduct",
   "component.menu.register": "Register",
   "component.menu.submitTalk": "Submit Talk",
-  "component.menu.description": "About the Event",
+  "component.menu.description": "About",
+  "component.menu.sponsors": "Sponsors",
 
   // Component -> Contact
   "component.contact.title": "Our contacts",
@@ -40,6 +41,9 @@ export default {
   "component.location.maps.title": "UNAMA Alcindo Cacela Map",
   // Component -> Sponsors
   "component.sponsors.title": "Sponsors",
+  "component.sponsors.description":
+    "The recipe for success is simple: people > technology + a lot of support! For this event to happen with the quality everyone deserves, we need the collaboration of companies like yours! If your brand wants to be at the top of the Python pot and be part of an impactful event in the North of the country, we have a place in our tacacá stall just for you!",
+  "component.sponsors.button": "Check our Sponsorship Plan",
   // Component -> FAQ
   "component.faq.title": "Frequently Asked Questions",
   // Component -> Schedule

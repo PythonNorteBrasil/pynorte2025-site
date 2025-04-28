@@ -53,6 +53,7 @@ const Navbar = () => {
           },
         ]
       : []),
+    { name: t("sponsors"), href: `/${locale}/#sponsors`, scroll: true, id: "sponsors" },
     { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
   ];
 
@@ -72,7 +73,7 @@ const Navbar = () => {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.id)}
-                    className="text-tacaca hover:text-white transition-colors text-md font-medium"
+                    className="text-tacaca hover:text-white transition-colors text-sm font-medium"
                   >
                     {item.name}
                   </button>
@@ -80,7 +81,7 @@ const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-tacaca hover:text-white transition-colors text-md font-medium"
+                    className="text-tacaca hover:text-white transition-colors text-sm font-medium"
                     target={item.href.startsWith("http") ? "_blank" : "_self"}
                   >
                     {item.name}
@@ -177,7 +178,7 @@ const Navbar = () => {
               )}
 
               <Link href="https://www.even3.com.br/python-norte-2025/">
-                <Button className="w-full bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg">
+                <Button className="w-full bg-jiboia border-2 border-tacaca text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium px-6 py-4 rounded-lg my-3">
                   {t("register")}
                 </Button>
               </Link>
