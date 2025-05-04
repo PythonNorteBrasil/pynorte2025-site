@@ -2,42 +2,48 @@
   "sponsors": {
     "diamond": [
       {
-        "id": 1,
-        "name": "TacacáTech",
-        "logo": "https://placehold.co/200x100/F5EFB3/444817?text=TacacáTech",
-        "level": "Tacacá (Diamond)"
+        "id": "1",
+        "name": "The Python Software Foundation",
+        "url": "https://www.python.org/psf-landing/",
+        "logo": "/psf.png"
       }
     ],
     "gold": [
       {
-        "id": 2,
-        "name": "CamarãoSoft",
-        "logo": "https://placehold.co/180x90/F5EFB3/444817?text=CamarãoSoft",
-        "level": "Camarão (Gold)"
+        "url": "https://www.tacacacompany.com.br/",
+        "logo": "/psf.png",
+        "id": "gold",
+        "name": "Tacacá Company"
       }
     ],
     "silver": [
       {
-        "id": 3,
-        "name": "TucupiLabs",
-        "logo": "https://placehold.co/160x80/F5EFB3/444817?text=TucupiLabs",
-        "level": "Tucupi (Silver)"
+        "url": "https://www.tacacacompany.com.br/",
+        "logo": "/psf.png",
+        "id": "silver",
+        "name": "Tacacá Company"
       }
     ],
     "bronze": [
       {
-        "id": 4,
-        "name": "JambuDev",
-        "logo": "https://placehold.co/140x70/F5EFB3/444817?text=JambuDev",
-        "level": "Flor de Jambu (Bronze)"
+        "url": "https://www.tacacacompany.com.br/",
+        "logo": "/linuxtips.png",
+        "id": "bronze",
+        "name": "Tacacá Company"
       }
     ],
     "support": [
       {
-        "id": 5,
-        "name": "AçaíCode",
-        "logo": "https://placehold.co/120x60/F5EFB3/444817?text=AçaíCode",
-        "level": "Açaí (Support)"
+        "id": "1",
+        "url": "https://novatec.com.br/",
+        "logo": "/novatec.png",
+        "name": "Editora Novatec"
+      },
+      {
+        "id": "2",
+        "url": "https://linuxtips.io/",
+        "logo": "/linuxtips.png",
+        "name": "Editora Novatec"
       }
     ]
   }
