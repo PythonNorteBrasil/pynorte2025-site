@@ -1,19 +1,12 @@
 "use client";
 
-import sponsors from "@/data/sponsors.json";
+import { sponsors } from "@/data/sponsors.json";
 import { useScopedI18n } from "@/locales/client";
 import { Button } from "@/components/ui/button";
+import SponsorsLevel, { SponsorLevel } from "./ui/SponsorsLevel";
 
 const Sponsors = () => {
   const t = useScopedI18n("component.sponsors");
-
-  const levels = [
-    { key: "diamond", title: "Tacacá (Diamond)" },
-    { key: "gold", title: "Camarão (Gold)" },
-    { key: "silver", title: "Tucupi (Silver)" },
-    { key: "bronze", title: "Flor de Jambu (Bronze)" },
-    { key: "support", title: "Açaí (Support)" },
-  ];
 
   return (
     <section id="sponsors" className="py-20 bg-theme-background">
@@ -37,32 +30,33 @@ const Sponsors = () => {
             </Button>
           </div>
         </div>
+        <div className="flex flex-wrap lg:flex-row flex-col justify-between lg:gap-y-[180px] gap-y-[50px] gap-x-[29px] lg:mt-[180px] mt-[50px]">
+          <SponsorsLevel
+            sponsors={sponsors.diamond}
+            level={SponsorLevel.DIAMOND}
+          />
 
-        {/* <div className="space-y-16">
-          {levels.map((level) => (
-            <div key={level.key} className="text-center">
-              <h3 className="text-2xl font-semibold text-theme-brown mb-8">
-                {level.title}
-              </h3>
-              <div className="flex flex-wrap justify-center gap-8">
-                {sponsors.sponsors[
-                  level.key as keyof typeof sponsors.sponsors
-                ].map((sponsor) => (
-                  <div
-                    key={sponsor.id}
-                    className="hover:scale-105 transition-transform"
-                  >
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="rounded-lg"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div> */}
+          {process.env.NODE_ENV === "development" && (
+            <>
+              <SponsorsLevel
+                sponsors={sponsors.gold}
+                level={SponsorLevel.GOLD}
+              />
+              <SponsorsLevel
+                sponsors={sponsors.silver}
+                level={SponsorLevel.SILVER}
+              />
+              <SponsorsLevel
+                sponsors={sponsors.diamond}
+                level={SponsorLevel.BRONZE}
+              />
+            </>
+          )}
+          <SponsorsLevel
+            sponsors={sponsors.support}
+            level={SponsorLevel.SUPPORT}
+          />
+        </div>
       </div>
     </section>
   );
