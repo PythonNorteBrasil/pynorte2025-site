@@ -45,8 +45,8 @@ const imgWidth = {
 };
 
 const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
-  //const width = level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
-  const width = "w-full";
+  // const width = level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
+  const width = "w-full"; // TODO: Remover quando tiver mais patrocinadores
 
   return (
     <div className={`${width}`}>

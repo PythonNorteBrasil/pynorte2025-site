@@ -36,7 +36,7 @@ const Sponsors = () => {
             level={SponsorLevel.DIAMOND}
           />
 
-          {/*   {process.env.NODE_ENV === "development" && (
+          {process.env.NODE_ENV === "development" && (
             <>
               <SponsorsLevel
                 sponsors={sponsors.gold}
@@ -51,7 +51,7 @@ const Sponsors = () => {
                 level={SponsorLevel.BRONZE}
               />
             </>
-          )} */}
+          )}
           <SponsorsLevel
             sponsors={sponsors.support}
             level={SponsorLevel.SUPPORT}
