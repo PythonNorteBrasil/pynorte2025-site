@@ -45,36 +45,34 @@ const imgWidth = {
 };
 
 const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
-  // const width = level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
-  const width = "w-full"; // TODO: Remover quando tiver mais patrocinadores
+  const width =
+    level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
 
   return (
     <div className={`${width}`}>
-      <div className="relative top-8 flex justify-center items-center">
+      <div className="relative top-12 flex justify-center items-center">
         <img
           src={levelImages[level]}
           className="lg:w-[168px] lg:h-[94px] object-contain w-[120px] h-[60px]"
         />
       </div>
       <div
-        className={`rounded-[9px] ${levelsColors[level]} flex flex-col items-center justify-center py-4 mx-auto gap-6 lg:min-h-[400px] h-[200px]`}
+        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px]`}
       >
-        <div className="flex flex-row flex-wrap justify-center gap-16 items-center lg:h-[400px] ">
-          {sponsors.map((sponsor) => (
-            <div
-              key={sponsor.id}
-              className={`flex justify-center items-center py-[50px] ${imgWidth[level]} `}
-            >
-              <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className={`${imgWidth[level]} object-contain`}
-                />
-              </a>
-            </div>
-          ))}
-        </div>
+        {sponsors.map((sponsor) => (
+          <div
+            key={sponsor.id}
+            className={`flex justify-center items-center ${imgWidth[level]}`}
+          >
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className={`object-contain ${imgWidth[level]}`}
+              />
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );

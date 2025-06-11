@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useScopedI18n, useCurrentLocale } from "@/locales/client";
 import { useState } from "react";
@@ -18,7 +18,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-theme-background">
+    <section id="faq" className=" bg-theme-background">
       <div className="container mx-auto px-4">
         <div className="inline-flex flex-col justify-start items-start gap-11 w-full">
           <div className="self-stretch flex flex-col justify-start items-start gap-7">

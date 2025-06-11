@@ -4,32 +4,32 @@
       {
         "id": "1",
         "name": "The Python Software Foundation",
-        "url": "https://www.python.org/psf-landing/",
+        "url": "https://www.python.org/psf-landing/1",
         "logo": "/psf.png"
       }
     ],
     "gold": [
       {
         "url": "https://www.tacacacompany.com.br/",
-        "logo": "/psf.png",
+        "logo": "/idopter.png",
         "id": "gold",
         "name": "Tacacá Company"
       }
     ],
     "silver": [
       {
-        "url": "https://www.tacacacompany.com.br/",
-        "logo": "/psf.png",
-        "id": "silver",
-        "name": "Tacacá Company"
+        "id": "1",
+        "url": "https://novatec.com.br/",
+        "logo": "/idopter.png",
+        "name": "Editora Novatec"
       }
     ],
     "bronze": [
       {
-        "url": "https://www.tacacacompany.com.br/",
-        "logo": "/linuxtips.png",
-        "id": "bronze",
-        "name": "Tacacá Company"
+        "id": "1",
+        "url": "https://www.idopterlabs.com.br/",
+        "logo": "/idopter.png",
+        "name": "Idopter Labs"
       }
     ],
     "support": [
@@ -44,6 +44,18 @@
         "url": "https://linuxtips.io/",
         "logo": "/linuxtips.png",
         "name": "Editora Novatec"
+      },
+      {
+        "id": "4",
+        "url": "https://reprograma.com.br/",
+        "logo": "/reprograma.png",
+        "name": "Reprograma"
+      },
+      {
+        "id": "3",
+        "url": "https://www.unama.br/",
+        "logo": "/unama1.png",
+        "name": "Universade Unama"
       }
     ]
   }

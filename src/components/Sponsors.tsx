@@ -30,7 +30,7 @@ const Sponsors = () => {
             </Button>
           </div>
         </div>
-        <div className="flex flex-wrap lg:flex-row flex-col justify-between lg:gap-y-[180px] gap-y-[50px] gap-x-[29px] lg:mt-[180px] mt-[50px]">
+        <div className="flex flex-wrap lg:flex-row flex-col justify-between lg:gap-y-[24px] gap-y-[24px] gap-x-[29px] lg:mt-[30px] mt-[30px]">
           <SponsorsLevel
             sponsors={sponsors.diamond}
             level={SponsorLevel.DIAMOND}
@@ -46,12 +46,12 @@ const Sponsors = () => {
                 sponsors={sponsors.silver}
                 level={SponsorLevel.SILVER}
               />
-              <SponsorsLevel
-                sponsors={sponsors.diamond}
-                level={SponsorLevel.BRONZE}
-              />
             </>
           )}
+          <SponsorsLevel
+            sponsors={sponsors.bronze}
+            level={SponsorLevel.BRONZE}
+          />
           <SponsorsLevel
             sponsors={sponsors.support}
             level={SponsorLevel.SUPPORT}
