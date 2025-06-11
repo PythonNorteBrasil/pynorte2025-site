@@ -35,14 +35,18 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: t("home"), href: `/${locale}` },
     {
       name: t("description"),
       href: `/${locale}/#about-the-event`,
       scroll: true,
       id: "about-the-event",
     },
-    { name: t("submitTalk"), href: "https://forms.gle/Y4xHTdnQUnfAXNWU6" },
+    {
+      name: t("location"),
+      href: `/${locale}/#local`,
+      scroll: true,
+      id: "local",
+    },
     ...(process.env.NODE_ENV === "development"
       ? [
           {
@@ -53,7 +57,12 @@ const Navbar = () => {
           },
         ]
       : []),
-    { name: t("sponsors"), href: `/${locale}/#sponsors`, scroll: true, id: "sponsors" },
+    {
+      name: t("sponsors"),
+      href: `/${locale}/#sponsors`,
+      scroll: true,
+      id: "sponsors",
+    },
     { name: t("codeOfConduct"), href: `/${locale}/code-of-conduct` },
   ];
 
@@ -62,7 +71,16 @@ const Navbar = () => {
       <div className="container mx-auto px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <img src="/logo_02.svg" alt="Python Norte 2025" className="h-11" />
+            <button
+              onClick={() => scrollToSection("home")}
+              aria-label="Go to Home"
+            >
+              <img
+                src="/logo_02.svg"
+                alt="Python Norte 2025"
+                className="h-11"
+              />
+            </button>
           </div>
 
           {/* Desktop Menu */}

@@ -5,8 +5,9 @@ export default {
   "component.menu.codeOfConduct": "Code of Conduct",
   "component.menu.register": "Get Your Ticket",
   "component.menu.submitTalk": "Submit a Talk",
-  "component.menu.description": "About",
+  "component.menu.description": "About the Event",
   "component.menu.sponsors": "Sponsors",
+  "component.menu.location": "Location",
 
   // Component -> Contact
   "component.contact.title": "Contact Us",
