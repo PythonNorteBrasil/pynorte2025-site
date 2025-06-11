@@ -37,10 +37,10 @@ const levelImages = {
 };
 
 const imgWidth = {
-  [SponsorLevel.DIAMOND]: "lg:w-[500px] lg:h-[200px] w-[300px] h-[80px]",
-  [SponsorLevel.GOLD]: "lg:w-[300px] lg:h-[94px] w-[300px] h-[50px]",
-  [SponsorLevel.SILVER]: "lg:w-[250px] lg:h-[94px] w-[200px] h-[50px]",
-  [SponsorLevel.BRONZE]: "lg:w-[200px] lg:h-[94px] w-[200px] h-[50px]",
+  [SponsorLevel.DIAMOND]: "lg:w-[500px] lg:h-[200px] w-[300px] h-[200px]",
+  [SponsorLevel.GOLD]: "lg:w-[300px] lg:h-[94px] w-[250px] h-[230px]",
+  [SponsorLevel.SILVER]: "lg:w-[250px] lg:h-[94px] w-[200px] h-[180px]",
+  [SponsorLevel.BRONZE]: "lg:w-[200px] lg:h-[94px] w-[150px] h-[130px]",
   [SponsorLevel.SUPPORT]: "lg:w-[150px] lg:h-[94px] w-[100px] h-[80px]",
 };
 
@@ -49,7 +49,7 @@ const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
     level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
 
   return (
-    <div className={`${width}`}>
+    <div className={`${width} `}>
       <div className="relative top-12 flex justify-center items-center">
         <img
           src={levelImages[level]}
@@ -57,7 +57,7 @@ const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
         />
       </div>
       <div
-        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px]`}
+        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px] h-[300px]`}
       >
         {sponsors.map((sponsor) => (
           <div
