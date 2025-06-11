@@ -57,7 +57,7 @@ const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
         />
       </div>
       <div
-        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px] h-[300px]`}
+        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px] `}
       >
         {sponsors.map((sponsor) => (
           <div
