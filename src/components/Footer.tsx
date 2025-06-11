@@ -12,16 +12,16 @@ const Footer = () => {
   const isCodeOfConductPage = pathname.includes("code-of-conduct");
 
   const menuItems = [
-    { name: t("aboutTheEvent"), href: `/${locale}/#about-the-event` },
-    { name: t("eventLocation"), href: `/${locale}/#local` },
+    { name: t("aboutTheEvent"), href: `/${locale}#about-the-event` },
+    { name: t("eventLocation"), href: `/${locale}#local` },
     ...(process.env.NODE_ENV === "development"
       ? [
           { name: t("experts"), href: `/${locale}` },
           { name: t("program"), href: `/${locale}` },
         ]
       : []),
-    { name: t("questions"), href: `/${locale}/#faq` },
-    { name: t("sponsors"), href: `/${locale}/#sponsors` },
+    { name: t("questions"), href: `/${locale}#faq` },
+    { name: t("sponsors"), href: `/${locale}#sponsors` },
   ];
 
   return (
