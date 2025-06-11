@@ -34,8 +34,6 @@ const Navbar = () => {
     }
   };
 
-  /* { name: t("home"), href: `/${locale}` }, */
-
   const navItems = [
     {
       name: t("description"),
