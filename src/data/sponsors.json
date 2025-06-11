@@ -4,8 +4,8 @@
       {
         "id": "1",
         "name": "The Python Software Foundation",
-        "url": "https://www.python.org/psf-landing/1",
-        "logo": "/psf.png"
+        "url": "https://www.python.org/psf-landing/",
+        "logo": "/psf.svg"
       }
     ],
     "gold": [

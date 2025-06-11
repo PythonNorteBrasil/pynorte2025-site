@@ -37,7 +37,7 @@ const levelImages = {
 };
 
 const imgWidth = {
-  [SponsorLevel.DIAMOND]: "lg:w-[300px] lg:h-[94px] w-[300px] h-[50px]",
+  [SponsorLevel.DIAMOND]: "lg:w-[500px] lg:h-[200px] w-[300px] h-[80px]",
   [SponsorLevel.GOLD]: "lg:w-[300px] lg:h-[94px] w-[300px] h-[50px]",
   [SponsorLevel.SILVER]: "lg:w-[250px] lg:h-[94px] w-[200px] h-[50px]",
   [SponsorLevel.BRONZE]: "lg:w-[200px] lg:h-[94px] w-[200px] h-[50px]",
