@@ -46,7 +46,7 @@ const imgWidth = {
 
 const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
   const width =
-    level === SponsorLevel.DIAMOND ? "w-full" : "lg:w-[calc(100%/2-29px)]";
+    level === SponsorLevel.SUPPORT ? "w-full" : "lg:w-[calc(100%/2-29px)]";
 
   return (
     <div className={`${width} `}>

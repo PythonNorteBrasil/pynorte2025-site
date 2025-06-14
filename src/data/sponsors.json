@@ -46,16 +46,22 @@
         "name": "Editora Novatec"
       },
       {
-        "id": "4",
+        "id": "3",
         "url": "https://reprograma.com.br/",
         "logo": "/reprograma.png",
         "name": "Reprograma"
       },
       {
-        "id": "3",
+        "id": "5",
         "url": "https://www.unama.br/",
         "logo": "/unama1.png",
         "name": "Universade Unama"
+      },
+      {
+        "id": "4",
+        "url": "https://apyb.python.org.br/index.html",
+        "logo": "/apyb.png",
+        "name": "Associação Python Brasil"
       }
     ]
   }
