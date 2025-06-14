@@ -40,28 +40,28 @@
         "name": "Editora Novatec"
       },
       {
-        "id": "2",
-        "url": "https://linuxtips.io/",
-        "logo": "/linuxtips.png",
-        "name": "Editora Novatec"
-      },
-      {
         "id": "3",
         "url": "https://reprograma.com.br/",
         "logo": "/reprograma.png",
         "name": "Reprograma"
       },
       {
-        "id": "5",
-        "url": "https://www.unama.br/",
-        "logo": "/unama1.png",
-        "name": "Universade Unama"
+        "id": "2",
+        "url": "https://linuxtips.io/",
+        "logo": "/linuxtips.png",
+        "name": "Editora Novatec"
       },
       {
         "id": "4",
         "url": "https://apyb.python.org.br/index.html",
         "logo": "/apyb.png",
         "name": "Associação Python Brasil"
+      },
+      {
+        "id": "5",
+        "url": "https://www.unama.br/",
+        "logo": "https://logo.unama.br/img/svg/unama.svg",
+        "name": "Universade Unama"
       }
     ]
   }

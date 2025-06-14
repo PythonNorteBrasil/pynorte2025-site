@@ -40,8 +40,8 @@ const imgWidth = {
   [SponsorLevel.DIAMOND]: "lg:w-[500px] lg:h-[200px] w-[300px] h-[200px]",
   [SponsorLevel.GOLD]: "lg:w-[300px] lg:h-[94px] w-[250px] h-[230px]",
   [SponsorLevel.SILVER]: "lg:w-[250px] lg:h-[94px] w-[200px] h-[180px]",
-  [SponsorLevel.BRONZE]: "lg:w-[200px] lg:h-[94px] w-[150px] h-[130px]",
-  [SponsorLevel.SUPPORT]: "lg:w-[150px] lg:h-[94px] w-[100px] h-[80px]",
+  [SponsorLevel.BRONZE]: "lg:w-[225px] lg:h-[94px] w-[150px] h-[140px]",
+  [SponsorLevel.SUPPORT]: "lg:w-[175px] lg:h-[94px] w-[110px] h-[80px]",
 };
 
 const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
