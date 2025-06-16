@@ -5,6 +5,7 @@ import Sponsors from "@/components/Sponsors";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import AboutTheEvent from "@/components/AboutTheEvent";
+import Keynotes from "@/components/keynotes";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <AboutTheEvent />
       <Location />
+      <Keynotes />
       <Schedule />
       <FAQ />
       <Sponsors />

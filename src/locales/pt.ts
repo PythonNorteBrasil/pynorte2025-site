@@ -1,7 +1,7 @@
 export default {
   // Component -> Menu
   "component.menu.home": "Início",
-  "component.menu.calendar": "Calendário",
+  "component.menu.calendar": "Programação",
   "component.menu.codeOfConduct": "Código de Conduta",
   "component.menu.register": "Adquira seu Ingresso",
   "component.menu.submitTalk": "Submeter Palestra",
