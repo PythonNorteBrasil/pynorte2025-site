@@ -35,7 +35,7 @@ const Keynotes = () => {
   ];
   return (
     <section className="bg-theme-background relative mt-[56px]">
-      <h2 className="mb-[100px] text-center tracking-wide text-3xl text-acai font-medium  font-mono">
+      <h2 className="mb-[80px] text-center tracking-wide text-3xl text-acai font-medium  font-mono">
         Keynotes
       </h2>
 

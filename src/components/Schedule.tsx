@@ -3,7 +3,7 @@
 import { useScopedI18n } from "@/locales/client";
 import { Button } from "@/components/ui/button";
 import { Clock } from "lucide-react";
-import keynotes from "../data/keynotes.json";
+import schedule from "../data/schedule.json";
 import { useState } from "react";
 
 type ScheduleItem = {
@@ -33,11 +33,7 @@ const Schedule = () => {
 
   const renderScheduleItems = () => {
     const allItems: ScheduleItem[] = [
-      ...keynotes.keynotes.map((keynote) => ({
-        ...keynote,
-        type: "keynote" as const,
-      })),
-      ...keynotes.activities.map((activity) => ({
+      ...schedule.activities.map((activity) => ({
         ...activity,
         type: "activity" as const,
       })),
@@ -65,14 +61,16 @@ const Schedule = () => {
               <Clock className="h-5 w-5 text-theme-primary" />
               <span className="text-theme-primary">
                 {item.time.includes(" - ")
-                  ? item.time.split(" - ")[1]
+                  ? item.time.split(" - ")[0]
                   : item.time}
               </span>
             </div>
             <div
               className={`flex-1 bg-theme-primary flex justify-center items-center p-[6px] rounded-[9px] `}
             >
-              <span className="text-theme-background text-center">{item.title}</span>
+              <span className="text-theme-background text-center">
+                {item.title}
+              </span>
             </div>
           </div>
         ))}

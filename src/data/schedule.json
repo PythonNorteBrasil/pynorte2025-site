@@ -1,0 +1,220 @@
+{
+  "activities": [
+    {
+      "id": 201,
+      "title": "Credenciamento / Coffee Break",
+      "time": "09:00 - 09:30",
+      "day": 1
+    },
+    {
+      "id": 202,
+      "title": "Big Data: Impacto do Inverno Amazônico na Saúde Respiratória e no Mercado Farmacêutico",
+      "time": "09:30 - 10:15",
+      "day": 1
+    },
+    {
+      "id": 203,
+      "title": "Dados Sozinhos Não Falam. Você Fala por Eles!",
+      "time": "10:15 - 11:00",
+      "day": 1
+    },
+    {
+      "id": 204,
+      "title": "Palestras Relâmpagos",
+      "time": "11:00 - 11:15",
+      "day": 1
+    },
+    {
+      "id": 205,
+      "title": "Keynote: Thayana Mamoré",
+      "time": "11:15 - 12:15",
+      "day": 1
+    },
+    {
+      "id": 206,
+      "title": "Almoço",
+      "time": "12:15 - 14:00",
+      "day": 1
+    },
+    {
+      "id": 207,
+      "title": "IA Generativa com Python: Além do ChatGPT",
+      "time": "14:00 - 14:45",
+      "day": 1
+    },
+    {
+      "id": 208,
+      "title": "Análise de Complexidade e Algoritmos de Ordenação em Python: Big O na Prática",
+      "time": "14:00 - 14:45",
+      "day": 1
+    },
+    {
+      "id": 209,
+      "title": "GeoPy: Analisando dados do censo 2022",
+      "time": "14:00 - 14:45",
+      "day": 1
+    },
+    {
+      "id": 210,
+      "title": "Arquitetura Serverless em Python com AWS Lambda e Step Functions",
+      "time": "14:45 - 15:30",
+      "day": 1
+    },
+    {
+      "id": 211,
+      "title": "Não é Bruxaria, é Pandas! Análise do Comércio Exterior Brasileiro",
+      "time": "14:45 - 15:30",
+      "day": 1
+    },
+    {
+      "id": 212,
+      "title": "Geovisualização Interativa: Python e a Arte de Mapear Dados na Web",
+      "time": "15:30 - 15:45",
+      "day": 1
+    },
+    {
+      "id": 213,
+      "title": "Pythonicante e falando: escrevendo código que o Guido aprovaria",
+      "time": "15:30 - 15:45",
+      "day": 1
+    },
+    {
+      "id": 214,
+      "title": "Cumbuca Dev: Diversidade e Inclusão em Tecnologia",
+      "time": "15:45 - 16:30",
+      "day": 1
+    },
+    {
+      "id": 215,
+      "title": "IA com Propósito: Construindo Aplicativos Mais Humanos e Acessíveis",
+      "time": "15:45 - 16:30",
+      "day": 1
+    },
+    {
+      "id": 216,
+      "title": "Coffee Break / Network",
+      "time": "16:30 - 17:00",
+      "day": 1
+    },
+    {
+      "id": 301,
+      "title": "Credenciamento / Coffee Break",
+      "time": "09:00 - 09:30",
+      "day": 2
+    },
+    {
+      "id": 302,
+      "title": "Automações que Pensam: conectando Python e IA para obtenção de resultados",
+      "time": "09:30 - 10:15",
+      "day": 2
+    },
+    {
+      "id": 303,
+      "title": "Desvendando o Airflow: de Orquestração básica a Mlops e Agentes de IA",
+      "time": "09:30 - 10:15",
+      "day": 2
+    },
+    {
+      "id": 304,
+      "title": "Criando Assistentes Inteligentes com Python",
+      "time": "09:30 - 10:15",
+      "day": 2
+    },
+    {
+      "id": 305,
+      "title": "Oficina de Python para Backend",
+      "time": "09:30 - 10:15",
+      "day": 2
+    },
+    {
+      "id": 306,
+      "title": "Reprograma",
+      "time": "10:15 - 11:00",
+      "day": 2
+    },
+    {
+      "id": 307,
+      "title": "Palestras Relâmpagos",
+      "time": "11:00 - 11:15",
+      "day": 2
+    },
+    {
+      "id": 308,
+      "title": "Keynote: Allex Lima / Iris Ferreira",
+      "time": "11:15 - 12:15",
+      "day": 2
+    },
+    {
+      "id": 309,
+      "title": "Almoço",
+      "time": "12:15 - 14:00",
+      "day": 2
+    },
+    {
+      "id": 310,
+      "title": "Sintomas de colonialismo de dados: Starlink na Amazônia",
+      "time": "14:00 - 14:45",
+      "day": 2
+    },
+    {
+      "id": 311,
+      "title": "Parseie, não valide!",
+      "time": "14:00 - 14:45",
+      "day": 2
+    },
+    {
+      "id": 312,
+      "title": "Escolhas que importam: conceitos que salvam seu código",
+      "time": "14:45 - 15:30",
+      "day": 2
+    },
+    {
+      "id": 313,
+      "title": "Tutorial Pituguês",
+      "time": "14:45 - 15:30",
+      "day": 2
+    },
+    {
+      "id": 314,
+      "title": "Projetando um Lakehouse: Hands On",
+      "time": "14:45 - 15:30",
+      "day": 2
+    },
+    {
+      "id": 315,
+      "title": "Iniciando uma Jornada na Engenharia de Dados em tempos de IA",
+      "time": "15:30 - 15:45",
+      "day": 2
+    },
+    {
+      "id": 316,
+      "title": "Acessibilidade não é opção, é requisito básico: Guia prático para desenvolvimento e o design inclusivos",
+      "time": "15:30 - 15:45",
+      "day": 2
+    },
+    {
+      "id": 317,
+      "title": "Planejamento de projetos com graça e código: Python na indústria real",
+      "time": "15:45 - 16:30",
+      "day": 2
+    },
+    {
+      "id": 318,
+      "title": "Pituguês: Python em Português",
+      "time": "15:45 - 16:30",
+      "day": 2
+    },
+    {
+      "id": 319,
+      "title": "Primeira Contribuição para o Open Source",
+      "time": "15:45 - 16:30",
+      "day": 2
+    },
+    {
+      "id": 320,
+      "title": "Coffee Break / Network",
+      "time": "16:30 - 17:00",
+      "day": 2
+    }
+  ]
+}
