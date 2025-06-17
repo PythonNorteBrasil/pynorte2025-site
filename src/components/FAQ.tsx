@@ -31,12 +31,27 @@ const FAQ = () => {
             {faqs.faqs.map((faq) => (
               <div key={faq.id} className="w-full ">
                 <button
-                  className="self-stretch w-full py-2.5 px-1.5 bg-tacaca-alternative inline-flex justify-center items-center gap-2 rounded-[9px]"
+                  className="self-stretch w-full py-2.5 px-1.5 bg-tacaca-alternative inline-flex justify-between items-center gap-2 rounded-[9px]"
                   onClick={() => toggleFaq(faq.id)}
                 >
-                  <div className="text-center text-acai text-base font-normal font-mono">
+                  <div className="text-center text-acai text-base font-normal font-mono flex-1">
                     {faq.question}
                   </div>
+                  <svg
+                    className={`w-5 h-5 text-acai transition-transform duration-200 ${openFaq === faq.id ? "rotate-180" : ""
+                      }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </button>
 
                 {openFaq === faq.id && (
