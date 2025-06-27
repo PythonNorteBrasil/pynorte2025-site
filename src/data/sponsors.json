@@ -58,9 +58,21 @@
         "name": "Associação Python Brasil"
       },
       {
-        "id": "5",
+        "id": "6",
+        "url": "https://www.instagram.com/caesoft.uepa",
+        "logo": "cae.png",
+        "name": "Centro Acadêmico de Engenharia de Software - UEPA"
+      },
+      {
+        "id": "7",
+        "url": "https://www.instagram.com/elas.na.tecnologia/",
+        "logo": "elas.png",
+        "name": "Comunidade Elas na Tecnologia"
+      },
+      {
+        "id": "unama",
         "url": "https://www.unama.br/",
-        "logo": "https://logo.unama.br/img/svg/unama.svg",
+        "logo": "unama.png",
         "name": "Universade Unama"
       }
     ]

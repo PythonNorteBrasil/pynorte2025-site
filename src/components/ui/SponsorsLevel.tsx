@@ -48,6 +48,8 @@ const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
   const width =
     level === SponsorLevel.SUPPORT ? "w-full" : "lg:w-[calc(100%/2-29px)]";
 
+  const unamaImgWidth = "lg:w-[350px] lg:h-[100px] w-[250px] h-[80px]";
+
   return (
     <div className={`${width} `}>
       <div className="relative top-12 flex justify-center items-center">
@@ -57,18 +59,20 @@ const SponsorsLevel = ({ sponsors, level }: SponsorsLevel) => {
         />
       </div>
       <div
-        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px] `}
+        className={`rounded-xl ${levelsColors[level]} flex flex-wrap justify-center items-center lg:gap-x-20 gap-12 py-10 px-4 w-full  mt-6  lg:h-[400px] `}
       >
         {sponsors.map((sponsor) => (
           <div
             key={sponsor.id}
-            className={`flex justify-center items-center ${imgWidth[level]}`}
+            className={`flex justify-center items-center ${
+              sponsor.id === "unama" ? unamaImgWidth : imgWidth[level]
+            } `}
           >
             <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className={`object-contain ${imgWidth[level]}`}
+                className={`object-contain `}
               />
             </a>
           </div>
