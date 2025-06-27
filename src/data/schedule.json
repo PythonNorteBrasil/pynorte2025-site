@@ -14,7 +14,13 @@
     },
     {
       "id": 203,
-      "title": "Dados Sozinhos Não Falam. Você Fala por Eles!",
+      "title": "Gerenciadores de pacotes Python: Indo além do pip install",
+      "time": "10:15 - 11:00",
+      "day": 1
+    },
+    {
+      "id": 319,
+      "title": "Primeira Contribuição para o Open Source",
       "time": "10:15 - 11:00",
       "day": 1
     },
@@ -201,12 +207,6 @@
     {
       "id": 318,
       "title": "Pituguês: Python em Português",
-      "time": "15:45 - 16:30",
-      "day": 2
-    },
-    {
-      "id": 319,
-      "title": "Primeira Contribuição para o Open Source",
       "time": "15:45 - 16:30",
       "day": 2
     },
