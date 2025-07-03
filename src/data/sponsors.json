@@ -70,9 +70,21 @@
         "name": "Comunidade Elas na Tecnologia"
       },
       {
+        "id": "7",
+        "url": "https://www.instagram.com/lovelacetech?igsh=MTlzenhkbjc5ZTA4NA%3D%3D&utm_source=qr",
+        "logo": "lovelace.png",
+        "name": "Comunidade Lovelace Tech"
+      },
+      {
+        "id": "7",
+        "url": "https://easygestor.com/",
+        "logo": "easy2.png",
+        "name": "Comunidade Elas na Tecnologia"
+      },
+      {
         "id": "unama",
         "url": "https://www.unama.br/",
-        "logo": "unama.png",
+        "logo": "unama3.png",
         "name": "Universade Unama"
       }
     ]
