@@ -1,25 +1,31 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useScopedI18n } from "@/locales/client";
+import { useCurrentLocale, useScopedI18n } from "@/locales/client";
 import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
 const Hero = () => {
   const t = useScopedI18n("component.hero");
+  const locale = useCurrentLocale();
   // Python Norte 2025 event date (July 4, 2025 at 9:00 AM UTC-3)
   const eventDate = new Date("2025-07-04T12:00:00Z");
 
   const currentDate = new Date();
-  const isEventDay = currentDate.getDate() === 4 &&
+  const isEventDay =
+    currentDate.getDate() === 4 &&
     currentDate.getMonth() === eventDate.getMonth() &&
     currentDate.getFullYear() === eventDate.getFullYear();
-  const isPostEventDay = currentDate.getDate() === 8 &&
+  const isPostEventDay =
+    currentDate.getDate() === 8 &&
     currentDate.getMonth() === eventDate.getMonth() &&
     currentDate.getFullYear() === eventDate.getFullYear();
 
   return (
-    <div id="hero" className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden mt-10">
+    <div
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center bg-theme-background overflow-hidden mt-10"
+    >
       <div className="container mx-auto px-0 py-16 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:text-left lg:flex lg:justify-start">
           <div className="w-full lg:w-1/2 text-center px-4">
@@ -54,20 +60,19 @@ const Hero = () => {
               <div className="w-full flex flex-col justify-end items-end">
                 {!isEventDay && !isPostEventDay && (
                   <>
-                    <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">{t("countdown")}</h3>
+                    <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
+                      {t("countdown")}
+                    </h3>
                     <CountdownTimer targetDate={eventDate} />
                   </>
                 )}
-                {isEventDay && (
-                  <div className="flex flex-col items-end w-full">
-                    <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
-                      {t("ourEventIsHere")}
-                    </div>
-                    <div className="bg-[#F28E89] rounded-lg px-4 py-2 text-center lg:text-right text-acai w-full">
-                      {t("watchKeynotes")}
-                    </div>
-                  </div>
-                )}
+                <>
+                  <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
+                    {t("countdown")}
+                  </h3>
+                  <CountdownTimer targetDate={eventDate} />
+                </>
+
                 {isPostEventDay && (
                   <div className="flex flex-col items-end w-full">
                     <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
@@ -82,11 +87,14 @@ const Hero = () => {
             </div>
 
             <div className="flex justify-center">
-              <Link href="https://www.even3.com.br/python-norte-2025/">
-                <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
-                  {t("register")}
-                </Button>
-              </Link>
+              <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
+                <a
+                  href="https://drive.google.com/file/d/1ujVkiO8dowdvadoDfNciMd8B84xX2she/view?usp=sharing"
+                  target="_blank"
+                >
+                  {t("schedule")}
+                </a>
+              </Button>
             </div>
           </div>
 

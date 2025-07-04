@@ -26,6 +26,7 @@ export default {
   "component.hero.description":
     "O maior evento de Python da região Norte do Brasil. Junte-se a nós em Belém do Pará para 3 dias de aprendizado, networking e cultura amazônica.",
   "component.hero.register": "Adquira seu Ingresso",
+  "component.hero.schedule": "Confira nossa Programação ",
   "component.hero.countdown": "Contagem Regressiva",
   "component.hero.ourEventIsHere": "Chegou nosso encontro!",
   "component.hero.watchKeynotes": "Assista à transmissão de nossos Keynotes!",

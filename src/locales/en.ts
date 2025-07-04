@@ -26,6 +26,7 @@ export default {
   "component.hero.description":
     "The largest Python event in the North of Brazil. Join us in Belém, Pará, for three days of learning, networking, and Amazonian culture.",
   "component.hero.register": "Get Your Ticket",
+  "component.hero.schedule": "Check Our Schedule",
   "component.hero.countdown": "Countdown",
   "component.hero.ourEventIsHere": "Our Event is Here!",
   "component.hero.watchKeynotes": "Watch Our Keynote Livestreams!",
