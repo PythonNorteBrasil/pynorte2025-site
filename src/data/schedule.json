@@ -1,220 +1,335 @@
 {
-  "activities": [
-    {
-      "id": 201,
-      "title": "Credenciamento / Coffee Break",
-      "time": "09:00 - 09:30",
-      "day": 1
+  "scheduleData": {
+    "day1": {
+      "title": "Sexta-feira, 04 de Julho",
+      "events": [
+        {
+          "id": "accreditation-1",
+          "time": "08:00 - 09:00",
+          "type": "accreditation",
+          "title": "Credenciamento",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "coffee-break-1",
+          "time": "09:00",
+          "type": "coffee-break",
+          "title": "Coffee Break",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "opening-ceremony",
+          "time": "09:30 - 10:00",
+          "type": "ceremony",
+          "title": "Cerimônia de abertura",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "keynote-1",
+          "time": "10:00 - 11:00",
+          "type": "keynote",
+          "title": "Keynote",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "speaker": "Alternei de Souza Brito",
+            "speakerImage": "/alex.jpeg",
+            "room": "Sala Tacacá",
+            "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+            "registrationLink": "Inscreva-se"
+          }
+        },
+        {
+          "id": "talks-1",
+          "time": "10:00 - 12:00",
+          "type": "talks",
+          "title": "Palestras",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "talks": [
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              }
+            ]
+          }
+        },
+        {
+          "id": "talks-2",
+          "time": "10:00 - 12:00",
+          "type": "talks",
+          "title": "Palestras",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "talks": [
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              }
+            ]
+          }
+        },
+        {
+          "id": "keynote-2",
+          "time": "10:00 - 11:00",
+          "type": "keynote",
+          "title": "Keynote",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "speaker": "Alternei de Souza Brito",
+            "speakerImage": "/alex.jpeg",
+            "room": "Sala Tacacá",
+            "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+            "registrationLink": "Inscreva-se"
+          }
+        },
+        {
+          "id": "talks-3",
+          "time": "10:00 - 12:00",
+          "type": "talks",
+          "title": "Palestras",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "talks": [
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              }
+            ]
+          }
+        },
+        {
+          "id": "accreditation-2",
+          "time": "13:00 - 17:00",
+          "type": "accreditation",
+          "title": "Credenciamento",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "activities": [
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              }
+            ]
+          }
+        }
+      ]
     },
-    {
-      "id": 202,
-      "title": "Big Data: Impacto do Inverno Amazônico na Saúde Respiratória e no Mercado Farmacêutico",
-      "time": "09:30 - 10:15",
-      "day": 1
-    },
-    {
-      "id": 203,
-      "title": "Gerenciadores de pacotes Python: Indo além do pip install",
-      "time": "10:15 - 11:00",
-      "day": 1
-    },
-    {
-      "id": 319,
-      "title": "Primeira Contribuição para o Open Source",
-      "time": "10:15 - 11:00",
-      "day": 1
-    },
-    {
-      "id": 204,
-      "title": "Palestras Relâmpagos",
-      "time": "11:00 - 11:15",
-      "day": 1
-    },
-    {
-      "id": 205,
-      "title": "Keynote: Thayana Mamoré",
-      "time": "11:15 - 12:15",
-      "day": 1
-    },
-    {
-      "id": 206,
-      "title": "Almoço",
-      "time": "12:15 - 14:00",
-      "day": 1
-    },
-    {
-      "id": 207,
-      "title": "Pituguês: Python em Português",
-      "time": "14:00 - 14:45",
-      "day": 1
-    },
-    {
-      "id": 208,
-      "title": "Análise de Complexidade e Algoritmos de Ordenação em Python: Big O na Prática",
-      "time": "14:00 - 14:45",
-      "day": 1
-    },
-    {
-      "id": 209,
-      "title": "GeoPy: Analisando dados do censo 2022",
-      "time": "14:00 - 14:45",
-      "day": 1
-    },
-    {
-      "id": 210,
-      "title": "Desacoplar para conquistar: Arquitetura Serverless na Prática com AWS Step Functions e AWS Lambda",
-      "time": "14:45 - 15:30",
-      "day": 1
-    },
-    {
-      "id": 211,
-      "title": "Não é Bruxaria, é Pandas! Análise do Comércio Exterior Brasileiro",
-      "time": "14:45 - 15:30",
-      "day": 1
-    },
-    {
-      "id": 212,
-      "title": "Geovisualização Interativa: Python e a Arte de Mapear Dados na Web",
-      "time": "15:30 - 15:45",
-      "day": 1
-    },
-    {
-      "id": 213,
-      "title": "PyLadies Experience: Jornada, códigos e conexões",
-      "time": "15:30 - 15:45",
-      "day": 1
-    },
-    {
-      "id": 214,
-      "title": "Cumbuca Dev: Diversidade e Inclusão em Tecnologia",
-      "time": "15:45 - 16:30",
-      "day": 1
-    },
-    {
-      "id": 215,
-      "title": "IA com Propósito: Construindo Aplicativos Mais Humanos e Acessíveis",
-      "time": "15:45 - 16:30",
-      "day": 1
-    },
-    {
-      "id": 216,
-      "title": "Coffee Break / Network",
-      "time": "16:30 - 17:00",
-      "day": 1
-    },
-    {
-      "id": 301,
-      "title": "Credenciamento / Coffee Break",
-      "time": "09:00 - 09:30",
-      "day": 2
-    },
-    {
-      "id": 302,
-      "title": "Automações que Pensam: conectando Python e IA para obtenção de resultados",
-      "time": "09:30 - 10:15",
-      "day": 2
-    },
-    {
-      "id": 303,
-      "title": "Desvendando o Airflow: de Orquestração básica a Mlops e Agentes de IA",
-      "time": "09:30 - 10:15",
-      "day": 2
-    },
-    {
-      "id": 304,
-      "title": "Criando Assistentes Inteligentes com Python",
-      "time": "09:30 - 10:15",
-      "day": 2
-    },
-    {
-      "id": 305,
-      "title": "Oficina de Python para Backend",
-      "time": "09:30 - 10:15",
-      "day": 2
-    },
-    {
-      "id": 306,
-      "title": "Transição de carreira com Python: histórias reais e dicas práticas para começar em tech",
-      "time": "10:15 - 11:00",
-      "day": 2
-    },
-    {
-      "id": 307,
-      "title": "Palestras Relâmpagos",
-      "time": "11:00 - 11:15",
-      "day": 2
-    },
-    {
-      "id": 308,
-      "title": "Keynote: Allex Lima / Iris Ferreira",
-      "time": "11:15 - 12:15",
-      "day": 2
-    },
-    {
-      "id": 309,
-      "title": "Almoço",
-      "time": "12:15 - 14:00",
-      "day": 2
-    },
-    {
-      "id": 310,
-      "title": "Sintomas de colonialismo de dados: Starlink na Amazônia",
-      "time": "14:00 - 14:45",
-      "day": 2
-    },
-    {
-      "id": 311,
-      "title": "Parseie, não valide!",
-      "time": "14:00 - 14:45",
-      "day": 2
-    },
-    {
-      "id": 312,
-      "title": "Escolhas que importam: conceitos que salvam seu código",
-      "time": "14:45 - 15:30",
-      "day": 2
-    },
-    {
-      "id": 313,
-      "title": "Tutorial Pituguês",
-      "time": "14:45 - 15:30",
-      "day": 2
-    },
-    {
-      "id": 314,
-      "title": "Projetando um Lakehouse: Hands On",
-      "time": "14:45 - 15:30",
-      "day": 2
-    },
-    {
-      "id": 315,
-      "title": "Iniciando uma Jornada na Engenharia de Dados em tempos de IA",
-      "time": "15:30 - 15:45",
-      "day": 2
-    },
-    {
-      "id": 316,
-      "title": "Acessibilidade não é opção, é requisito básico: Guia prático para desenvolvimento e o design inclusivos",
-      "time": "15:30 - 15:45",
-      "day": 2
-    },
-    {
-      "id": 317,
-      "title": "Planejamento de projetos com graxa e código: Python na indústria real",
-      "time": "15:45 - 16:30",
-      "day": 2
-    },
-    {
-      "id": 318,
-      "title": "IA Generativa com Python: Além do ChatGPT",
-      "time": "15:45 - 16:30",
-      "day": 2
-    },
-    {
-      "id": 320,
-      "title": "Coffee Break / Network",
-      "time": "16:30 - 17:00",
-      "day": 2
+    "day2": {
+      "title": "Sábado, 05 de Julho",
+      "events": [
+        {
+          "id": "accreditation-day2",
+          "time": "08:00 - 09:00",
+          "type": "accreditation",
+          "title": "Credenciamento",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "coffee-break-day2",
+          "time": "09:00",
+          "type": "coffee-break",
+          "title": "Coffee Break",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "opening-ceremony-day2",
+          "time": "09:30 - 10:00",
+          "type": "ceremony",
+          "title": "Cerimônia de abertura",
+          "expandable": true,
+          "isExpanded": false
+        },
+        {
+          "id": "keynote-day2",
+          "time": "10:00 - 11:00",
+          "type": "keynote",
+          "title": "Keynote",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "speaker": "Alternei de Souza Brito",
+            "speakerImage": "/alex.jpeg",
+            "room": "Sala Tacacá",
+            "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+            "registrationLink": "Inscreva-se"
+          }
+        },
+        {
+          "id": "talks-day2",
+          "time": "10:00 - 12:00",
+          "type": "talks",
+          "title": "Palestras",
+          "expandable": true,
+          "isExpanded": false,
+          "content": {
+            "talks": [
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              },
+              {
+                "speaker": "Alternei de Souza Brito",
+                "speakerImage": "/alex.jpeg",
+                "room": "Sala Tacacá",
+                "talkTitle": "Web Scraping em Python: Mineração de Opiniões baseada em Reclamações de consumidores",
+                "registrationLink": "Inscreva-se"
+              }
+            ]
+          }
+        }
+      ]
     }
-  ]
+  }
 }
