@@ -60,24 +60,18 @@ const Hero = () => {
                       {t("countdown")}
                     </h3>
                     <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
-                      <a
-                        href="https://drive.google.com/file/d/1ujVkiO8dowdvadoDfNciMd8B84xX2she/view?usp=sharing"
-                        target="_blank"
-                      >
+                      <Link href={`/${locale}/#schedule`}>
                         {t("schedule")}
-                      </a>
+                      </Link>
                     </Button>
                   </>
                 )}
 
                 <>
                   <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors ">
-                    <a
-                      href="https://drive.google.com/file/d/1ujVkiO8dowdvadoDfNciMd8B84xX2she/view?usp=sharing"
-                      target="_blank"
-                    >
+                    <Link href={`/${locale}/#schedule`}>
                       {t("schedule")}
-                    </a>
+                    </Link>
                   </Button>
                 </>
 
@@ -93,17 +87,6 @@ const Hero = () => {
                 )}
               </div>
             </div>
-
-            {/* <div className="flex justify-center">
-              <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
-                <a
-                  href="https://drive.google.com/file/d/1ujVkiO8dowdvadoDfNciMd8B84xX2she/view?usp=sharing"
-                  target="_blank"
-                >
-                  {t("schedule")}
-                </a>
-              </Button>
-            </div> */}
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:justify-end">

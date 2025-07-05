@@ -174,16 +174,12 @@ const Navbar = () => {
       scroll: true,
       id: "local",
     },
-    ...(process.env.NODE_ENV === "development"
-      ? [
-        {
-          name: t("calendar"),
-          href: `/${locale}/#schedule`,
-          scroll: true,
-          id: "schedule" as SectionId,
-        },
-      ]
-      : []),
+    {
+      name: t("calendar"),
+      href: `/${locale}/#schedule`,
+      scroll: true,
+      id: "schedule" as SectionId,
+    },
     {
       name: t("sponsors"),
       href: `/${locale}/#sponsors`,

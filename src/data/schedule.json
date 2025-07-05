@@ -112,43 +112,50 @@
       "id": 302,
       "title": "Automações que Pensam: conectando Python e IA para obtenção de resultados",
       "time": "09:30 - 10:15",
-      "day": 2
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 303,
       "title": "Desvendando o Airflow: de Orquestração básica a Mlops e Agentes de IA",
       "time": "09:30 - 10:15",
-      "day": 2
+      "day": 2,
+      "location": "Auditório B100"
     },
     {
       "id": 304,
-      "title": "Criando Assistentes Inteligentes com Python",
-      "time": "09:30 - 10:15",
-      "day": 2
+      "title": "Tutorial: Criando Assistentes Inteligentes com Python",
+      "time": "10:15 - 11:15",
+      "day": 2,
+      "location": "Laboratório L107"
     },
     {
       "id": 305,
-      "title": "Oficina de Python para Backend",
-      "time": "09:30 - 10:15",
-      "day": 2
+      "title": "Tutorial: Oficina de Python para Backend",
+      "time": "10:15 - 11:15",
+      "day": 2,
+      "location": "Laboratório L101"
     },
     {
       "id": 306,
       "title": "Transição de carreira com Python: histórias reais e dicas práticas para começar em tech",
       "time": "10:15 - 11:00",
-      "day": 2
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 307,
       "title": "Palestras Relâmpagos",
       "time": "11:00 - 11:15",
-      "day": 2
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 308,
       "title": "Keynote: Allex Lima / Iris Ferreira",
       "time": "11:15 - 12:15",
-      "day": 2
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 309,
@@ -158,62 +165,71 @@
     },
     {
       "id": 310,
-      "title": "Sintomas de colonialismo de dados: Starlink na Amazônia",
-      "time": "14:00 - 14:45",
-      "day": 2
+      "title": "Parseie, não valide!",
+      "time": "12:15 - 13:00",
+      "day": 2,
+      "location": "Auditório B100"
     },
     {
       "id": 311,
-      "title": "Parseie, não valide!",
-      "time": "14:00 - 14:45",
-      "day": 2
+      "title": "Sintomas do colonialismo de dados: Starlink na Amazônia",
+      "time": "14:00 - 15:00",
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 312,
       "title": "Escolhas que importam: conceitos que salvam seu código",
-      "time": "14:45 - 15:30",
-      "day": 2
+      "time": "14:00 - 14:45",
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 313,
       "title": "Tutorial Pituguês",
       "time": "14:45 - 15:30",
-      "day": 2
+      "day": 2,
+      "location": "Laboratório L107"
     },
     {
       "id": 314,
-      "title": "Projetando um Lakehouse: Hands On",
+      "title": "Tutorial: Projetando um Lakehouse: Hands On",
       "time": "14:45 - 15:30",
-      "day": 2
+      "day": 2,
+      "location": "Laboratório L101"
     },
     {
       "id": 315,
-      "title": "Iniciando uma Jornada na Engenharia de Dados em tempos de IA",
-      "time": "15:30 - 15:45",
-      "day": 2
+      "title": "Acessibilidade não é opção, é requisito básico: Guia prático para desenvolvimento e design inclusivos",
+      "time": "15:30 - 16:15",
+      "day": 2,
+      "location": "Auditório B100"
     },
     {
       "id": 316,
-      "title": "Acessibilidade não é opção, é requisito básico: Guia prático para desenvolvimento e o design inclusivos",
-      "time": "15:30 - 15:45",
-      "day": 2
+      "title": "Iniciando uma Jornada na Engenharia de Dados em tempos de IA",
+      "time": "15:30 - 16:15",
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 317,
-      "title": "Planejamento de projetos com graxa e código: Python na indústria real",
-      "time": "15:45 - 16:30",
-      "day": 2
+      "title": "IA Generativa com Python: Além do ChatGPT",
+      "time": "16:15 - 17:00",
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
       "id": 318,
-      "title": "IA Generativa com Python: Além do ChatGPT",
-      "time": "15:45 - 16:30",
-      "day": 2
+      "title": "Encerramento Python Norte 2025",
+      "time": "17:00 - 17:15",
+      "day": 2,
+      "location": "Auditório David Muffarej"
     },
     {
-      "id": 320,
-      "title": "Coffee Break / Network",
-      "time": "16:30 - 17:00",
+      "id": 319,
+      "title": "Coffee Break",
+      "time": "17:15 - 18:00",
       "day": 2
     }
   ]
