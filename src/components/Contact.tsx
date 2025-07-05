@@ -63,15 +63,15 @@ const Contact = () => {
               </a>
             ))}
           </div>
-          <Link href="https://www.even3.com.br/python-norte-2025/">
+          <a href="https://www.even3.com.br/python-norte-2025/">
             <Button
               asChild
               size="lg"
               className="bg-jiboia text-tacaca hover:bg-tacaca hover:text-jiboia transition-colors text-md font-medium w-full max-w-2xl"
             >
-              <a href="#tickets">{t("buyTicket")}</a>
+              {t("buyTicket")}
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </>

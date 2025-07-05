@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { useCurrentLocale, useScopedI18n } from "@/locales/client";
-import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
 const Hero = () => {
@@ -63,7 +62,6 @@ const Hero = () => {
                     <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
                       {t("countdown")}
                     </h3>
-                    <CountdownTimer targetDate={eventDate} />
                     <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
                       <a
                         href="https://drive.google.com/file/d/1ujVkiO8dowdvadoDfNciMd8B84xX2she/view?usp=sharing"
