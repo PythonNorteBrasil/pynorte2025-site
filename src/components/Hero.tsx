@@ -11,10 +11,7 @@ const Hero = () => {
   const eventDate = new Date("2025-07-04T12:00:00Z");
 
   const currentDate = new Date();
-  const isEventDay =
-    currentDate.getDate() === 4 &&
-    currentDate.getMonth() === eventDate.getMonth() &&
-    currentDate.getFullYear() === eventDate.getFullYear();
+  const isEventDay = true
   const isPostEventDay =
     currentDate.getDate() === 8 &&
     currentDate.getMonth() === eventDate.getMonth() &&
