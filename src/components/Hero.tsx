@@ -11,7 +11,7 @@ const Hero = () => {
   const eventDate = new Date("2025-07-04T12:00:00Z");
 
   const currentDate = new Date();
-  const isEventDay = true
+  const isEventDay = true;
   const isPostEventDay =
     currentDate.getDate() === 8 &&
     currentDate.getMonth() === eventDate.getMonth() &&
@@ -54,39 +54,28 @@ const Hero = () => {
               </div>
 
               <div className="w-full flex flex-col justify-end items-end">
-                {!isEventDay && !isPostEventDay && (
-                  <>
-                    <h3 className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
-                      {t("countdown")}
-                    </h3>
-                    <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors">
-                      <Link href={`/${locale}/#schedule`}>
-                        {t("schedule")}
-                      </Link>
-                    </Button>
-                  </>
-                )}
-
-                <>
-                  <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md w-full md:w-auto transition-colors ">
-                    <Link href={`/${locale}/#schedule`}>
-                      {t("schedule")}
-                    </Link>
-                  </Button>
-                </>
-
-                {isPostEventDay && (
-                  <div className="flex flex-col items-end w-full">
-                    <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
-                      {t("missItAlready")}
-                    </div>
-                    <div className="bg-[#F28E89] rounded-lg px-4 py-2 text-center lg:text-right text-acai w-full">
-                      {t("accessRepository")}
-                    </div>
+                <div className="flex flex-col items-end w-full">
+                  <div className="text-2xl text-acai mb-2 font-medium text-center lg:text-right">
+                    {t("missItAlready")}
                   </div>
-                )}
+                  <div className="bg-[#F28E894D] rounded-lg px-4 py-2 text-center lg:text-right text-acai w-full">
+                    {t("accessRepository")}
+                  </div>
+                </div>
               </div>
             </div>
+
+            <Button className="bg-jiboia text-tacaca hover:bg-jiboia-light text-lg px-8 py-6 mt-4 rounded-md transition-colors w-full">
+              <Link
+                href={
+                  "https://www.flickr.com/photos/203114989@N04/albums/72177720327337621"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fotos e Materias de apoio
+              </Link>
+            </Button>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:justify-end">
