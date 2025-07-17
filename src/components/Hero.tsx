@@ -73,7 +73,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Fotos e Materias de apoio
+                {t("photosAndMaterials")}
               </Link>
             </Button>
           </div>

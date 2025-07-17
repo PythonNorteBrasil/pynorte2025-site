@@ -33,7 +33,7 @@ export default {
   "component.hero.missItAlready": "Saudades, maninho?",
   "component.hero.accessRepository":
     "Acesse nosso repositório e guarde de lembrança!",
-  "component.hero.photosAndMaterials": "Fotos e materiais de apoio",
+  "component.hero.photosAndMaterials": "Fotos e Materiais de apoio",
   "component.hero.timer.days": "Dias",
 
   // Component -> Countdown Timer
